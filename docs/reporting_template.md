@@ -81,14 +81,14 @@ Example: "Bike-sharing stations frequently experience either no available bikes 
 ### Key Patterns Discovered
 
 #### Pattern 1: [Name]
-![Visualization](path/to/image.png)
+*[Insert visualization here - e.g., time series plot, distribution chart]*
 
 **Insight**: [Description of the pattern and its significance]
 
 **Business Implication**: [What this means for the business]
 
 #### Pattern 2: [Name]
-![Visualization](path/to/image.png)
+*[Insert visualization here - e.g., correlation heatmap, scatter plot]*
 
 **Insight**: [Description]
 
@@ -131,7 +131,7 @@ Example: "Bike-sharing stations frequently experience either no available bikes 
 - ⚠️ [Limitation 3]
 
 ### Feature Importance
-![Feature Importance Chart](path/to/chart.png)
+*[Insert feature importance chart here - e.g., bar chart showing top 10 features]*
 
 **Top 5 Features**:
 1. **Feature 1**: [Why it matters]

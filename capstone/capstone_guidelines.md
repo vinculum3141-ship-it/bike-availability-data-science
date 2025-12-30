@@ -124,22 +124,22 @@ Build a complete ML system that:
 ## 💡 Tips for Success
 
 ### Do:
-✅ Start early and iterate
-✅ Document as you go
-✅ Test your code frequently
-✅ Ask for feedback early
-✅ Focus on insights, not just code
-✅ Think about the end user
-✅ Be honest about limitations
+- ✅ Start early and iterate
+- ✅ Document as you go
+- ✅ Test your code frequently
+- ✅ Ask for feedback early
+- ✅ Focus on insights, not just code
+- ✅ Think about the end user
+- ✅ Be honest about limitations
 
 ### Don't:
-❌ Wait until the last minute
-❌ Skip data validation
-❌ Ignore data leakage
-❌ Overcomplicate visualizations
-❌ Forget to save your work
-❌ Neglect documentation
-❌ Be afraid to ask for help
+- ❌ Wait until the last minute
+- ❌ Skip data validation
+- ❌ Ignore data leakage
+- ❌ Overcomplicate visualizations
+- ❌ Forget to save your work
+- ❌ Neglect documentation
+- ❌ Be afraid to ask for help
 
 ## 🎯 Success Criteria
 
