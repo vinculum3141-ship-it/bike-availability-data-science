@@ -40,14 +40,20 @@ Example:
 - `M1_02_environment_setup.ipynb`
 
 ## 💡 Tips
-- Start each notebook with a title and description
+- Start with the [notebook template](../notebook_template.ipynb) for consistent structure
+- Review the [example notebook](../example_data_exploration.ipynb) for best practices
 - Use markdown cells to explain your thinking
 - Include code comments for clarity
 - Save your work frequently
+- Follow the [coding standards](../../docs/coding_standards.md)
 
 ## 📚 Resources
-- Check `docs/setup_google_colab.md` for Colab setup instructions
-- Review `CONTRIBUTING.md` for coding guidelines
+- 📓 [Notebook Template](../notebook_template.ipynb) - Copy this to start
+- 📐 [Coding Standards](../../docs/coding_standards.md) - Write clean code
+- 📚 [Code Snippets](../../docs/code_snippets.md) - Quick reference
+- 🔧 [Google Colab Setup](../../docs/setup_google_colab.md) - Cloud setup
+- 🤝 [CONTRIBUTING.md](../../CONTRIBUTING.md) - Guidelines
+- 🔧 [Dependency Management](../../docs/dependency_management.md) - Environment setup
 
 ## ✨ Checkpoint
 Before moving to Module 02, ensure:

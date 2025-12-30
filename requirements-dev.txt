@@ -1,0 +1,69 @@
+# ═══════════════════════════════════════════════════════════
+# Development Dependencies
+# ═══════════════════════════════════════════════════════════
+#
+# These are additional packages for development, testing, and
+# documentation. Not required for running the core notebooks.
+#
+# Install with:
+#   pip install -r requirements-dev.txt
+#
+
+# Include base requirements
+-r requirements.txt
+
+# ═══════════════════════════════════════════════════════════
+# Testing
+# ═══════════════════════════════════════════════════════════
+
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-mock>=3.12.0
+
+# ═══════════════════════════════════════════════════════════
+# Documentation
+# ═══════════════════════════════════════════════════════════
+
+# Documentation generation
+sphinx>=7.2.0
+sphinx-rtd-theme>=2.0.0
+
+# Markdown support
+myst-parser>=2.0.0
+
+# ═══════════════════════════════════════════════════════════
+# Code Quality & Analysis
+# ═══════════════════════════════════════════════════════════
+
+# Additional linting
+pydocstyle>=6.3.0
+bandit>=1.7.5  # Security linter
+isort>=5.13.0  # Import sorting
+
+# ═══════════════════════════════════════════════════════════
+# Notebook Tools
+# ═══════════════════════════════════════════════════════════
+
+# Jupyter Lab
+jupyterlab>=4.0.0
+jupyter-contrib-nbextensions>=0.7.0
+
+# Notebook formatting
+nbqa>=1.7.0
+nbconvert>=7.12.0
+
+# ═══════════════════════════════════════════════════════════
+# Performance Profiling
+# ═══════════════════════════════════════════════════════════
+
+# Memory profiling
+memory-profiler>=0.61.0
+
+# Line profiling
+line-profiler>=4.1.0
+
+# ═══════════════════════════════════════════════════════════
+# Pre-commit Hooks (Optional)
+# ═══════════════════════════════════════════════════════════
+
+# pre-commit>=3.6.0

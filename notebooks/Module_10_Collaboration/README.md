@@ -42,16 +42,28 @@ Create the following notebooks in this folder:
 Follow this pattern: `M10_{number}_{description}.ipynb`
 
 ## 💡 Tips
-- Review `CONTRIBUTING.md` for guidelines
-- Check `docs/reporting_template.md` for documentation templates
+- Start with the [notebook template](../notebook_template.ipynb) for consistent structure
+- Review [CONTRIBUTING.md](../../CONTRIBUTING.md) for workflow guidelines
+- Check [reporting template](../../docs/reporting_template.md) for documentation
+- Reference [code snippets](../../docs/code_snippets.md) for common tasks
 - Practice explaining technical concepts simply
 - Think about production requirements early
+- Follow [coding standards](../../docs/coding_standards.md) religiously
 
-## 📚 Key Tools
+## 📚 Key Tools & Resources
+**Tools**:
 - Git & GitHub - Version control
 - Black / Pylint - Code formatting
 - Sphinx - Documentation generation
 - Pre-commit hooks - Code quality
+
+**Documentation**:
+- 📓 [Notebook Template](../notebook_template.ipynb) - Consistent structure
+- 🤝 [CONTRIBUTING.md](../../CONTRIBUTING.md) - Complete workflow guide
+- 📈 [Reporting Template](../../docs/reporting_template.md) - Present findings
+- 📐 [Coding Standards](../../docs/coding_standards.md) - Code quality
+- 📚 [Code Snippets](../../docs/code_snippets.md) - Quick reference
+- 🔧 [Dependency Management](../../docs/dependency_management.md) - Setup guide
 
 ## 🤝 Collaboration Best Practices
 - Write clear commit messages

@@ -42,15 +42,26 @@ Create the following notebooks in this folder:
 Follow this pattern: `M2_{number}_{description}.ipynb`
 
 ## 💡 Tips
+- Start with the [notebook template](../notebook_template.ipynb) for consistent structure
 - Use the `src/data_acquisition.py` module for reusable functions
 - Store API keys in environment variables (never commit them!)
-- Check `docs/open_data_sources.md` for data source links
+- Check [open data sources](../../docs/open_data_sources.md) for data links
+- Reference [code snippets](../../docs/code_snippets.md) for API examples
 - Always save raw data before processing
+- Follow [coding standards](../../docs/coding_standards.md) for clean code
 
-## 📚 Key Libraries
+## 📚 Key Libraries & Resources
+**Libraries**:
 - `requests` - API calls
 - `pandas` - Data manipulation
 - `json` - JSON handling
+
+**Documentation**:
+- 📓 [Notebook Template](../notebook_template.ipynb) - Start here
+- 🌐 [Open Data Sources](../../docs/open_data_sources.md) - Where to get data
+- 📚 [Code Snippets](../../docs/code_snippets.md) - API and data loading examples
+- 📐 [Coding Standards](../../docs/coding_standards.md) - Best practices
+- 📊 [Data Organization](../../data/README.md) - How to structure data
 
 ## ✨ Checkpoint
 Before moving to Module 03, ensure:

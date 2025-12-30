@@ -42,16 +42,28 @@ Create the following notebooks in this folder:
 Follow this pattern: `M3_{number}_{description}.ipynb`
 
 ## 💡 Tips
-- Use `pandas-profiling` for quick automated analysis
+- Start with the [notebook template](../notebook_template.ipynb) for consistent structure
+- Review the [example EDA notebook](../example_data_exploration.ipynb) for best practices
+- Use `ydata-profiling` (formerly pandas-profiling) for quick automated analysis
 - Look for patterns in time series data
+- Check [code snippets](../../docs/code_snippets.md) for visualization examples
 - Pay attention to data quality issues early
 - Document insights for later feature engineering
+- Follow [coding standards](../../docs/coding_standards.md) for clean code
 
-## 📚 Key Libraries
+## 📚 Key Libraries & Resources
+**Libraries**:
 - `pandas` - Data manipulation
-- `pandas-profiling` - Automated profiling
+- `ydata-profiling` - Automated profiling
 - `matplotlib` / `seaborn` - Static visualizations
 - `plotly` - Interactive visualizations
+
+**Documentation**:
+- 📓 [Notebook Template](../notebook_template.ipynb) - Start here
+- 🎓 [Example EDA Notebook](../example_data_exploration.ipynb) - Learn from this
+- 📚 [Code Snippets](../../docs/code_snippets.md) - Visualization examples
+- 📐 [Coding Standards](../../docs/coding_standards.md) - Best practices
+- 📊 [Data Organization](../../data/README.md) - Data structure guide
 
 ## ✨ Checkpoint
 Before moving to Module 04, ensure:

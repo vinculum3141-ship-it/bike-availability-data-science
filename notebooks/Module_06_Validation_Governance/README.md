@@ -42,15 +42,25 @@ Create the following notebooks in this folder:
 Follow this pattern: `M6_{number}_{description}.ipynb`
 
 ## 💡 Tips
+- Start with the [notebook template](../notebook_template.ipynb) for consistent structure
 - Use `src/evaluation.py` for evaluation functions
-- Check `docs/model_documentation_guidelines.md` for templates
+- Check [model documentation guidelines](../../docs/model_documentation_guidelines.md) for templates
+- Reference [code snippets](../../docs/code_snippets.md) for evaluation examples
 - Be honest about model limitations
 - Think about production monitoring
+- Follow [coding standards](../../docs/coding_standards.md) for clean code
 
-## 📚 Key Libraries
+## 📚 Key Libraries & Resources
+**Libraries**:
 - `scikit-learn` - Evaluation metrics
 - `shap` - Model explanations
 - `matplotlib` / `seaborn` - Visualizations
+
+**Documentation**:
+- 📓 [Notebook Template](../notebook_template.ipynb) - Start here
+- 📋 [Model Documentation Guidelines](../../docs/model_documentation_guidelines.md) - Document models
+- 📚 [Code Snippets](../../docs/code_snippets.md) - Evaluation examples
+- 📐 [Coding Standards](../../docs/coding_standards.md) - Best practices
 
 ## 📋 Model Card Checklist
 - [ ] Model purpose and use case

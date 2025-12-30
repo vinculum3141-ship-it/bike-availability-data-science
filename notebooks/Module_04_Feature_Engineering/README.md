@@ -42,16 +42,26 @@ Create the following notebooks in this folder:
 Follow this pattern: `M4_{number}_{description}.ipynb`
 
 ## 💡 Tips
+- Start with the [notebook template](../notebook_template.ipynb) for consistent structure
 - Use `src/feature_engineering.py` for reusable transformations
+- Check [code snippets](../../docs/code_snippets.md) for feature engineering examples
 - Avoid data leakage (don't use future data!)
 - Document feature meanings clearly
 - Keep track of feature importance ideas
+- Follow [coding standards](../../docs/coding_standards.md) for clean code
 
-## 📚 Key Libraries
+## 📚 Key Libraries & Resources
+**Libraries**:
 - `pandas` - Feature creation
 - `numpy` - Mathematical operations
 - `scikit-learn` - Scaling and encoding
 - `category_encoders` - Advanced encoding
+
+**Documentation**:
+- 📓 [Notebook Template](../notebook_template.ipynb) - Start here
+- 📚 [Code Snippets](../../docs/code_snippets.md) - Feature engineering examples
+- 📐 [Coding Standards](../../docs/coding_standards.md) - Best practices
+- 📊 [Data Organization](../../data/README.md) - Save processed data here
 
 ## ⚠️ Important
 - Never use future information in features (data leakage!)
