@@ -14,14 +14,6 @@ This guide explains how to manage project dependencies.
 pip install -r requirements.txt
 ```
 
-### `requirements-dev.txt`
-**Purpose**: Additional development tools (testing, linting, documentation)  
-**Use case**: Local development, contributing to the project
-
-```bash
-pip install -r requirements-dev.txt
-```
-
 ---
 
 ## 🐍 Python Version
@@ -64,14 +56,7 @@ python --version
 pip install -r requirements.txt
 ```
 
-### Method 2: Development Installation
-
-```bash
-# Install core + development dependencies
-pip install -r requirements-dev.txt
-```
-
-### Method 3: Virtual Environment (Recommended)
+### Method 2: Virtual Environment (Recommended)
 
 ```bash
 # Create virtual environment
@@ -90,7 +75,7 @@ pip install -r requirements.txt
 deactivate
 ```
 
-### Method 4: Conda Environment
+### Method 3: Conda Environment
 
 ```bash
 # Create conda environment
@@ -396,5 +381,3 @@ except ImportError:
 - [Managing Dependencies](https://realpython.com/courses/managing-python-dependencies/)
 
 ---
-
-**Need Help?** Check the [CONTRIBUTING.md](../CONTRIBUTING.md) for more guidance on setting up your development environment.
