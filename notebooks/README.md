@@ -212,7 +212,6 @@ Before moving to the next module, verify the checkpoint criteria in the module R
 2. Review the example notebook
 3. Search the code snippets guide
 4. Review the coding standards
-5. Check [CONTRIBUTING.md](../CONTRIBUTING.md)
 
 ---
 

@@ -154,8 +154,8 @@ Your project should demonstrate:
 
 - Review all module notebooks for reference
 - Check `docs/` for guidelines and templates
-- Use `CONTRIBUTING.md` for code standards
-- Refer to `grading_rubric.md` for assessment details
+- Refer to `docs/coding_standards.md` for code quality standards
+- Use `self_evaluation.md` to assess your work before submission
 
 ## 🤔 Evaluation Questions
 

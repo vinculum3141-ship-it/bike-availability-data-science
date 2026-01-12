@@ -21,7 +21,6 @@ This repository contains **30 README files** organized hierarchically. Each serv
 - Setup instructions
 - Learning resources
 - Capstone project info
-- Contributing guidelines
 
 **Links to**:
 - All module READMEs
@@ -116,7 +115,7 @@ Each module README follows a consistent structure with learning objectives, task
 **[notebooks/Module_10_Collaboration/README.md](../notebooks/Module_10_Collaboration/README.md)**  
 **Focus**: Git, code review, deployment  
 **Key Tasks**: Version control, code review, documentation, deployment  
-**Special Resources**: CONTRIBUTING guide, reporting template
+**Special Resources**: reporting template
 
 ---
 
@@ -196,9 +195,9 @@ Each module README follows a consistent structure with learning objectives, task
 **Purpose**: Complete capstone project requirements  
 **Covers**: Objectives, deliverables, timeline, submission guidelines
 
-### [capstone/grading_rubric.md](../capstone/grading_rubric.md)
-**Purpose**: 100-point assessment rubric  
-**Covers**: Scoring criteria for all project components
+### [capstone/self_evaluation.md](../capstone/self_evaluation.md)
+**Purpose**: Self-assessment tool for students  
+**Covers**: Checklist, quality questions, reflection, and scoring guide
 
 ---
 
@@ -220,7 +219,6 @@ Each module README follows a consistent structure with learning objectives, task
 | **Document models** | [model_documentation_guidelines.md](../docs/model_documentation_guidelines.md) |
 | **Create reports** | [reporting_template.md](../docs/reporting_template.md) |
 | **Use Colab** | [setup_google_colab.md](../docs/setup_google_colab.md) |
-| **Contribute** | [CONTRIBUTING.md](../CONTRIBUTING.md) |
 | **Capstone project** | [capstone_guidelines.md](../capstone/capstone_guidelines.md) |
 
 ---
@@ -246,10 +244,9 @@ Each module README follows a consistent structure with learning objectives, task
 ### For Instructors
 
 1. **[Main README](../README.md)** - Overall structure
-2. **[CONTRIBUTING.md](../CONTRIBUTING.md)** - Workflow and standards
-3. **[capstone_guidelines.md](../capstone/capstone_guidelines.md)** - Project requirements
-4. **[grading_rubric.md](../capstone/grading_rubric.md)** - Assessment criteria
-5. All module READMEs - Review learning objectives
+2. **[capstone_guidelines.md](../capstone/capstone_guidelines.md)** - Project requirements
+3. **[self_evaluation.md](../capstone/self_evaluation.md)** - Student self-assessment tool
+4. All module READMEs - Review learning objectives
 
 ---
 
@@ -274,7 +271,7 @@ Each module README references:
 - **Module 06** → model_documentation_guidelines.md
 - **Module 07** → reporting_template.md
 - **Module 09** → experiment_best_practices.md
-- **Module 10** → CONTRIBUTING.md, reporting_template.md
+- **Module 10** → reporting_template.md
 
 ---
 
@@ -298,35 +295,17 @@ All READMEs have been reviewed for:
 ### By Topic
 - **Setup**: Main README → dependency_management.md → Module 01
 - **Data**: data/README.md → open_data_sources.md → Module 02
-- **Coding**: coding_standards.md → code_snippets.md → CONTRIBUTING.md
+- **Coding**: coding_standards.md → code_snippets.md
 - **ML**: Module 05 → experiment_best_practices.md → model_documentation_guidelines.md
 - **Visualization**: Module 07 → reporting_template.md
-- **Deployment**: Module 10 → CONTRIBUTING.md
+- **Deployment**: Module 10
 
 ### By Role
 - **Beginner**: Main README → Quick Start → Module 01
 - **Developer**: coding_standards.md → code_snippets.md → module READMEs
 - **Data Scientist**: data/README.md → modules 02-09
 - **ML Engineer**: modules 05, 08, 09 → experiment_best_practices.md
-- **Instructor**: capstone_guidelines.md → grading_rubric.md → all modules
-
----
-
-## 📝 Maintenance Notes
-
-**Last Updated**: 2024 (as part of template enhancement)
-
-**When to Update This Guide**:
-- New README files are added
-- Module structure changes
-- Documentation reorganization
-- New cross-references are created
-
-**Consistency Standards**:
-- All module READMEs follow the same structure
-- Tips sections always reference template, standards, snippets
-- Resources sections always link to relevant docs
-- Checkpoint sections ensure completion before moving on
+- **Student (Capstone)**: capstone_guidelines.md → self_evaluation.md
 
 ---
 
