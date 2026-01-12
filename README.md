@@ -132,7 +132,7 @@ The `capstone/` folder contains a full end-to-end assignment that you can
 use as a portfolio project.
 
 - [Capstone Guidelines](capstone/capstone_guidelines.md) - Project requirements and timeline
-- [Grading Rubric](capstone/grading_rubric.md) - Assessment criteria
+- [Self-Evaluation Guide](capstone/self_evaluation.md) - Assess your work independently
 
 ## 📜 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

@@ -190,3 +190,6 @@ pip install jupyterlab
 ---
 
 **Bottom line:** All installation methods provide everything you need for the course. Choose the one that works best for you! 🎯
+
+---
+Reviewed: 12 Jan 2026
