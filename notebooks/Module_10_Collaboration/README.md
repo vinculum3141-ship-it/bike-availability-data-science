@@ -43,7 +43,6 @@ Follow this pattern: `M10_{number}_{description}.ipynb`
 
 ## 💡 Tips
 - Start with the [notebook template](../notebook_template.ipynb) for consistent structure
-- Review [CONTRIBUTING.md](../../CONTRIBUTING.md) for workflow guidelines
 - Check [reporting template](../../docs/reporting_template.md) for documentation
 - Reference [code snippets](../../docs/code_snippets.md) for common tasks
 - Practice explaining technical concepts simply
@@ -59,7 +58,6 @@ Follow this pattern: `M10_{number}_{description}.ipynb`
 
 **Documentation**:
 - 📓 [Notebook Template](../notebook_template.ipynb) - Consistent structure
-- 🤝 [CONTRIBUTING.md](../../CONTRIBUTING.md) - Complete workflow guide
 - 📈 [Reporting Template](../../docs/reporting_template.md) - Present findings
 - 📐 [Coding Standards](../../docs/coding_standards.md) - Code quality
 - 📚 [Code Snippets](../../docs/code_snippets.md) - Quick reference
