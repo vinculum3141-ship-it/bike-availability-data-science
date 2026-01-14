@@ -93,5 +93,14 @@ Before moving to Module 02, ensure:
 
 **Key Outcome**: Confidence and clarity — you know what you're building and why!
 
+### 📝 Self-Evaluation
+Complete the [Module 01 Self-Evaluation](MODULE_01_SELF_EVALUATION.md) to:
+- ✅ Verify you've achieved all learning objectives
+- 🔍 Identify areas that need more review
+- 💪 Build confidence before moving to Module 02
+- 📝 Reflect on your learning journey
+
+**This is especially important for remote/online learners!**
+
 ---
 **Next Module:** [Module 02 - Data Acquisition](../Module_02_Data_Acquisition/) - Fetching real-world data from APIs
