@@ -78,10 +78,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/vinculum3141-ship-it/bike-availability-data-science-full"
-Documentation = "https://github.com/vinculum3141-ship-it/bike-availability-data-science-full#readme"
-Repository = "https://github.com/vinculum3141-ship-it/bike-availability-data-science-full"
-Issues = "https://github.com/vinculum3141-ship-it/bike-availability-data-science-full/issues"
+Homepage = "https://github.com/vinculum3141-ship-it/bike-availability-data-science"
+Documentation = "https://github.com/vinculum3141-ship-it/bike-availability-data-science#readme"
+Repository = "https://github.com/vinculum3141-ship-it/bike-availability-data-science"
+Issues = "https://github.com/vinculum3141-ship-it/bike-availability-data-science/issues"
 
 [tool.setuptools]
 packages = ["src"]
