@@ -17,6 +17,8 @@ By the end of this module, you should be able to:
 Complete the following notebooks in this folder:
 
 ### M1_01_project_overview.ipynb
+⏱️ **Estimated Time**: 15-20 minutes
+
 **Purpose**: Set context, motivate learners, explain what you'll build
 - Welcome & course overview
 - Smart cities and bike-sharing context
@@ -26,6 +28,8 @@ Complete the following notebooks in this folder:
 - **No code** - pure orientation
 
 ### M1_02_environment_setup.ipynb
+⏱️ **Estimated Time**: 20-30 minutes (setup) + 10 minutes (verification)
+
 **Purpose**: Remove all technical barriers and build confidence
 - Google Colab setup (step-by-step)
 - Local environment setup (alternative)
@@ -35,6 +39,8 @@ Complete the following notebooks in this folder:
 - **Minimal code** - just setup verification
 
 ### M1_03_open_data_sources.ipynb
+⏱️ **Estimated Time**: 25-35 minutes
+
 **Purpose**: Understand where data comes from and why open data matters
 - What is open data?
 - Primary data sources (bike + weather APIs)
@@ -44,6 +50,8 @@ Complete the following notebooks in this folder:
 - **Light code** - builds confidence with APIs
 
 ### M1_04_sample_data_exploration.ipynb
+⏱️ **Estimated Time**: 40-50 minutes
+
 **Purpose**: Build confidence with hands-on data exploration
 - Load sample dataset (pre-downloaded CSV)
 - Basic EDA: `.info()`, `.describe()`, `.head()`
@@ -60,6 +68,9 @@ Examples:
 - `M1_02_environment_setup.ipynb`
 - `M1_03_open_data_sources.ipynb`
 - `M1_04_sample_data_exploration.ipynb`
+
+## ⏱️ Total Module Time
+**Estimated**: 2-2.5 hours total for all notebooks + self-evaluation
 
 ## 💡 Tips
 - Start with the [notebook template](../notebook_template.ipynb) for consistent structure
