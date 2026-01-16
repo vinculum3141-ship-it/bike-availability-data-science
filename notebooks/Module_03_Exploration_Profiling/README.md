@@ -3,6 +3,38 @@
 ## 📌 Module Overview
 Explore your datasets, understand distributions, identify patterns, and detect data quality issues.
 
+---
+
+## 🎓 Course Development Strategy
+
+### Pedagogical Approach for This Module
+Module 3 introduces **new data exploration concepts** using progressive scaffolding.
+
+**Scaffolding Strategy:**
+- **Initial**: 70% complete - Learn EDA patterns and profiling tools
+- **Progressive**: 70% → 30% through 5 parts per notebook
+- **Goal**: Master exploration techniques, identify patterns independently
+- **Approach**: Guided examples → Moderate practice → Independent analysis
+
+**Progressive Difficulty (Each Notebook):**
+- Part 1: Setup & Demos (90% complete)
+- Part 2: Guided Practice (70%)
+- Part 3: Moderate Analysis (50%)
+- Part 4: Independent Exploration (30%)
+- Part 5: Advanced Insights (10% + optional)
+
+**Solution Notebooks:**
+- Separate `*_SOLUTIONS.ipynb` for each notebook
+- Attempt tasks first, then verify
+- Multiple valid approaches shown
+
+**Optional Challenges:**
+- Deep-dive statistical tests
+- Custom visualization functions
+- Automated insight generation
+
+---
+
 ## 🎯 Learning Objectives
 By the end of this module, you should be able to:
 - Perform exploratory data analysis (EDA)

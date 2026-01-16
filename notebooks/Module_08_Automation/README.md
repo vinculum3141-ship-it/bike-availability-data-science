@@ -3,6 +3,38 @@
 ## 📌 Module Overview
 Automate your data science workflow by creating reproducible pipelines.
 
+---
+
+## 🎓 Course Development Strategy
+
+### Pedagogical Approach for This Module
+Module 8 teaches **automation and MLOps** - transitioning notebooks to production.
+
+**Scaffolding Strategy:**
+- **Initial**: 60% complete - Learn automation patterns
+- **Progressive**: 60% → 20% emphasizing system design
+- **Goal**: Convert notebooks to scripts, build pipelines, automate workflows
+- **Approach**: Script conversion → Pipeline design → Scheduling → Monitoring
+
+**Progressive Difficulty (Each Notebook):**
+- Part 1: Automation Concepts (75% complete)
+- Part 2: Script Conversion (50%)
+- Part 3: Pipeline Building (35%)
+- Part 4: Scheduling (25%)
+- Part 5: Production Systems (15% + architecture design)
+
+**Solution Notebooks:**
+- Separate `*_SOLUTIONS.ipynb` with production patterns
+- Multiple pipeline architectures
+- Error handling strategies
+
+**Optional Challenges:**
+- Airflow/Prefect DAGs
+- Containerization with Docker
+- Cloud deployment (AWS/GCP/Azure)
+
+---
+
 ## 🎯 Learning Objectives
 By the end of this module, you should be able to:
 - Create end-to-end ML pipelines

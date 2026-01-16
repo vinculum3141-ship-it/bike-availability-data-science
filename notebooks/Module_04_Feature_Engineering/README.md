@@ -3,6 +3,38 @@
 ## 📌 Module Overview
 Transform raw data into meaningful features for machine learning models.
 
+---
+
+## 🎓 Course Development Strategy
+
+### Pedagogical Approach for This Module
+Module 4 teaches **feature engineering techniques** with progressive independence.
+
+**Scaffolding Strategy:**
+- **Initial**: 70% complete - Learn feature engineering patterns
+- **Progressive**: 70% → 20% as concepts build on each other
+- **Goal**: Create features independently, understand feature importance
+- **Approach**: See examples → Practice variations → Design custom features
+
+**Progressive Difficulty (Each Notebook):**
+- Part 1: Feature Concepts (90% complete)
+- Part 2: Basic Features (60%)
+- Part 3: Intermediate Features (40%)
+- Part 4: Advanced Features (25%)
+- Part 5: Custom Features (10% + creative challenges)
+
+**Solution Notebooks:**
+- Separate `*_SOLUTIONS.ipynb` for verification
+- Multiple feature engineering approaches
+- Best practices and pitfalls explained
+
+**Optional Challenges:**
+- Domain-specific features
+- Automated feature generation
+- Feature interaction exploration
+
+---
+
 ## 🎯 Learning Objectives
 By the end of this module, you should be able to:
 - Create time-based features (hour, day, month, etc.)

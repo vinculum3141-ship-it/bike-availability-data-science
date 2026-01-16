@@ -3,6 +3,38 @@
 ## 📌 Module Overview
 Create compelling visualizations and dashboards to communicate insights to stakeholders.
 
+---
+
+## 🎓 Course Development Strategy
+
+### Pedagogical Approach for This Module
+Module 7 teaches **visualization and communication** - essential data science skills.
+
+**Scaffolding Strategy:**
+- **Initial**: 65% complete - Learn visualization best practices
+- **Progressive**: 65% → 20% for creative freedom
+- **Goal**: Design effective visualizations independently, communicate insights clearly
+- **Approach**: Design principles → Tools → Practice → Create custom dashboards
+
+**Progressive Difficulty (Each Notebook):**
+- Part 1: Visualization Principles (80% complete)
+- Part 2: Basic Charts (55%)
+- Part 3: Interactive Viz (40%)
+- Part 4: Dashboard Design (25%)
+- Part 5: Custom Dashboards (15% + creative projects)
+
+**Solution Notebooks:**
+- Separate `*_SOLUTIONS.ipynb` with design alternatives
+- Multiple visualization approaches
+- Best practices and accessibility considerations
+
+**Optional Challenges:**
+- Real-time dashboards
+- Mobile-responsive designs
+- Storytelling with data
+
+---
+
 ## 🎯 Learning Objectives
 By the end of this module, you should be able to:
 - Design effective visualizations

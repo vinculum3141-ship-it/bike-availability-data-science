@@ -3,6 +3,38 @@
 ## 📌 Module Overview
 Learn to track experiments, compare models systematically, and manage ML lifecycle.
 
+---
+
+## 🎓 Course Development Strategy
+
+### Pedagogical Approach for This Module
+Module 9 teaches **experiment tracking and MLOps** - professional ML workflows.
+
+**Scaffolding Strategy:**
+- **Initial**: 65% complete - Learn MLflow and experiment tracking
+- **Progressive**: 65% → 25% for strategic thinking
+- **Goal**: Design experiments, track systematically, make data-driven decisions
+- **Approach**: Tools → Tracking → Comparison → Experiment design
+
+**Progressive Difficulty (Each Notebook):**
+- Part 1: MLflow Basics (75% complete)
+- Part 2: Experiment Tracking (55%)
+- Part 3: Model Registry (40%)
+- Part 4: A/B Testing (30%)
+- Part 5: Experiment Strategy (20% + design challenges)
+
+**Solution Notebooks:**
+- Separate `*_SOLUTIONS.ipynb` with tracking patterns
+- Multiple experiment designs
+- Statistical testing examples
+
+**Optional Challenges:**
+- Multi-armed bandits
+- Bayesian optimization
+- Advanced experiment designs
+
+---
+
 ## 🎯 Learning Objectives
 By the end of this module, you should be able to:
 - Track experiments with MLflow

@@ -3,6 +3,8 @@
 ## 📌 Module Overview
 Introduction to the bike availability prediction project, setting up your environment, and understanding the problem domain. This module focuses on **orientation, confidence, and setup** — not modeling yet!
 
+---
+
 ## 🎯 Learning Objectives
 By the end of this module, you should be able to:
 - ✔ Understand the bike-sharing business problem and smart cities context
@@ -12,6 +14,8 @@ By the end of this module, you should be able to:
 - ✔ Successfully run notebooks and verify your setup
 - ✔ Load and inspect a sample dataset with basic exploration
 - ✔ Define the prediction problem clearly
+
+---
 
 ## ✅ Your Tasks
 Complete the following notebooks in this folder:

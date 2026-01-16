@@ -3,6 +3,38 @@
 ## 📌 Module Overview
 Build, train, and compare machine learning models to predict bike availability.
 
+---
+
+## 🎓 Course Development Strategy
+
+### Pedagogical Approach for This Module
+Module 5 introduces **machine learning modeling** with careful scaffolding for new ML practitioners.
+
+**Scaffolding Strategy:**
+- **Initial**: 65% complete - Learn model training workflows
+- **Progressive**: 65% → 25% as confidence builds
+- **Goal**: Train models independently, compare effectively, select best approach
+- **Approach**: Baseline → Simple models → Complex models → Model selection
+
+**Progressive Difficulty (Each Notebook):**
+- Part 1: Model Setup (85% complete)
+- Part 2: Basic Training (60%)
+- Part 3: Hyperparameter Tuning (45%)
+- Part 4: Model Comparison (30%)
+- Part 5: Advanced Techniques (15% + optional)
+
+**Solution Notebooks:**
+- Separate `*_SOLUTIONS.ipynb` with multiple approaches
+- Different hyperparameter strategies shown
+- Model interpretation examples
+
+**Optional Challenges:**
+- Ensemble methods
+- Custom model architectures
+- Advanced cross-validation strategies
+
+---
+
 ## 🎯 Learning Objectives
 By the end of this module, you should be able to:
 - Split data into train/validation/test sets

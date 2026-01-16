@@ -3,6 +3,38 @@
 ## 📌 Module Overview
 Validate model performance, ensure fairness, and establish governance practices for production deployment.
 
+---
+
+## 🎓 Course Development Strategy
+
+### Pedagogical Approach for This Module
+Module 6 teaches **validation and governance** - critical for production ML.
+
+**Scaffolding Strategy:**
+- **Initial**: 70% complete - Learn validation frameworks
+- **Progressive**: 70% → 30% emphasizing critical thinking
+- **Goal**: Design validation strategies, document thoroughly, ensure reproducibility
+- **Approach**: Standards → Apply → Design custom validation → Document
+
+**Progressive Difficulty (Each Notebook):**
+- Part 1: Validation Concepts (85% complete)
+- Part 2: Implement Validation (60%)
+- Part 3: Edge Cases (40%)
+- Part 4: Documentation (30%)
+- Part 5: Governance Framework (20% + organizational design)
+
+**Solution Notebooks:**
+- Separate `*_SOLUTIONS.ipynb` with industry standards
+- Multiple documentation templates
+- Validation strategy examples
+
+**Optional Challenges:**
+- Automated validation pipelines
+- Custom monitoring dashboards
+- Production deployment checklists
+
+---
+
 ## 🎯 Learning Objectives
 By the end of this module, you should be able to:
 - Validate models on test data
