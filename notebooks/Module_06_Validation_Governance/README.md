@@ -3,6 +3,39 @@
 ## 📌 Module Overview
 Validate model performance, ensure fairness, and establish governance practices for production deployment.
 
+## ⚠️ Critical Domain Insight for Course Developers
+
+**OV-fiets System Characteristics:**
+- **No docking system**: `docks_available` field is always 0
+- **Same-station returns**: Bikes must return to origin station
+- **After-hours flexibility**: Bikes can be left outside without docking
+
+**Impact on Module 6 Validation & Governance:**
+- ✅ **Validation checks to include**:
+  - Verify no dock-related features used in model
+  - Confirm predictions respect: `0 ≤ bikes_available ≤ station_capacity`
+  - Validate same-station return constraint assumptions
+  - Check model doesn't predict cross-station transfers
+
+- ✅ **Business rule validation**:
+  - `bikes_available` must be integer values
+  - Station capacity constraints must hold
+  - After-hours patterns should be documented
+  - System limitations (no docking) must be in model cards
+
+- ✅ **Documentation requirements**:
+  - Explicitly state: "Model designed for OV-fiets (no-dock system)"
+  - Document why dock-based approaches don't apply
+  - Note transferability limitations to dock-based systems (Citi Bike, Vélib, etc.)
+  - Include system-specific assumptions in model governance docs
+
+- ✅ **Error analysis considerations**:
+  - Errors during after-hours periods (unique behavior)
+  - Station-specific capacity mismatches
+  - Misaligned with dock-based benchmark models (expected!)
+
+**Reference:** See M2_01 SOLUTIONS notebook, Task 8.1 for full explanation.
+
 ---
 
 ## 🎓 Course Development Strategy

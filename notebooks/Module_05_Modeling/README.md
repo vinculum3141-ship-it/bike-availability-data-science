@@ -3,6 +3,36 @@
 ## 📌 Module Overview
 Build, train, and compare machine learning models to predict bike availability.
 
+## ⚠️ Critical Domain Insight for Course Developers
+
+**OV-fiets System Characteristics:**
+- **No docking system**: `docks_available` field is always 0
+- **Same-station returns**: Bikes must return to origin station
+- **After-hours flexibility**: Bikes can be left outside without docking
+
+**Impact on Module 5 Modeling:**
+- ❌ **INVALID target variables**:
+  - Cannot predict "dock availability"
+  - Cannot model dock-to-bike ratios
+  - Cannot predict rebalancing needs between stations
+
+- ✅ **VALID target variables**:
+  - `bikes_available` at specific stations (primary target)
+  - `bikes_available` at future time points (time-series)
+  - `station_empty_probability` (binary classification)
+
+- ✅ **Key modeling constraints**:
+  - Predictions must respect: `0 ≤ bikes_available ≤ station_capacity`
+  - Consider same-station return flow (bikes don't transfer between stations)
+  - Model station-specific patterns (each station is independent)
+  - Account for after-hours behavior (bikes outside without docking)
+
+- ✅ **Feature selection validation**:
+  - Ensure no dock-related features in final model
+  - Validate that model doesn't assume dock-based operations
+
+**Reference:** See M2_01 SOLUTIONS notebook, Task 8.1 for full explanation.
+
 ---
 
 ## 🎓 Course Development Strategy

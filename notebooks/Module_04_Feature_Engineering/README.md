@@ -3,6 +3,32 @@
 ## 📌 Module Overview
 Transform raw data into meaningful features for machine learning models.
 
+## ⚠️ Critical Domain Insight for Course Developers
+
+**OV-fiets System Characteristics:**
+- **No docking system**: `docks_available` field is always 0
+- **Same-station returns**: Bikes must return to origin station
+- **After-hours flexibility**: Bikes can be left outside without docking
+
+**Impact on Module 4 Feature Engineering:**
+- ❌ **CANNOT create dock-based features**:
+  - No "docks_full_ratio", "dock_pressure", "dock_availability_rate"
+  - No dock-related lag features
+  - No dock rebalancing patterns
+
+- ✅ **FOCUS on bike-centric features**:
+  - `bikes_per_station_hour` (hourly availability patterns)
+  - `zero_bike_frequency` (how often station runs out)
+  - `bike_availability_rolling_mean` (temporal trends)
+  - `station_to_station_flow` (origin-return constraint)
+  - `after_hours_return_patterns` (unique to OV-fiets)
+
+- ✅ **Key assumptions to encode**:
+  - Station capacity is relatively fixed (bike inventory)
+  - bikes_available ≤ station_capacity at all times
+
+**Reference:** See M2_01 SOLUTIONS notebook, Task 8.1 for full explanation.
+
 ---
 
 ## 🎓 Course Development Strategy

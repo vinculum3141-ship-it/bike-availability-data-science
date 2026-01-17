@@ -3,6 +3,22 @@
 ## 📌 Module Overview
 Explore your datasets, understand distributions, identify patterns, and detect data quality issues.
 
+## ⚠️ Critical Domain Insight for Course Developers
+
+**OV-fiets System Characteristics:**
+- **No docking system**: `docks_available` field is always 0
+- **Same-station returns**: Bikes must return to origin station
+- **After-hours flexibility**: Bikes can be left outside without docking
+
+**Impact on Module 3:**
+- ❌ Don't expect dock utilization patterns in data
+- ✅ Focus exploration on bike availability patterns only
+- ✅ Station "capacity" = bike inventory, not physical docks
+- ✅ Identify temporal patterns in bike availability
+- ✅ Document this finding in profiling reports
+
+**Reference:** See M2_01 SOLUTIONS notebook, Task 8.1 for full explanation.
+
 ---
 
 ## 🎓 Course Development Strategy
