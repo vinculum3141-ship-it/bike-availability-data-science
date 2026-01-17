@@ -161,12 +161,10 @@ Follow this pattern: `M2_{number}_{description}.ipynb`
 
 ## 💡 Tips
 - Start with the [notebook template](../notebook_template.ipynb) for consistent structure
-- Use the `src/data_acquisition.py` module for reusable functions
-- **APIs in this module don't require keys**, but see [API Key Management Guide](../../docs/guides/API_KEY_MANAGEMENT_GUIDE.md) for future projects
-- Check [open data sources](../../docs/reference/open_data_sources.md) for data links
-- Reference [code snippets](../../docs/standards/code_snippets.md) for API examples
+- Check [open data sources](../../docs/open_data_sources.md) for data links
+- Reference [code snippets](../../docs/code_snippets.md) for API examples
 - Always save raw data before processing
-- Follow [coding standards](../../docs/standards/coding_standards.md) for clean code
+- Follow [coding standards](../../docs/coding_standards.md) for clean code
 
 ## 📚 Key Libraries & Resources
 **Libraries**:
@@ -176,9 +174,9 @@ Follow this pattern: `M2_{number}_{description}.ipynb`
 
 **Documentation**:
 - 📓 [Notebook Template](../notebook_template.ipynb) - Start here
-- 🌐 [Open Data Sources](../../docs/reference/open_data_sources.md) - Where to get data
-- 📚 [Code Snippets](../../docs/standards/code_snippets.md) - API and data loading examples
-- 📐 [Coding Standards](../../docs/standards/coding_standards.md) - Best practices
+- 🌐 [Open Data Sources](../../docs/open_data_sources.md) - Where to get data
+- 📚 [Code Snippets](../../docs/code_snippets.md) - API and data loading examples
+- 📐 [Coding Standards](../../docs/coding_standards.md) - Best practices
 - 📊 [Data Organization](../../data/README.md) - How to structure data
 
 ## ✨ Checkpoint
