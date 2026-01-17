@@ -68,27 +68,6 @@ Module 2 uses **reduced scaffolding** for M2_01 & M2_02 (building on M1) and **p
 
 ---
 
-## 📋 Development Planning Notes
-
-**Estimated Structure**: 4 notebooks
-
-**Key Implementation Topics:**
-- Real-time bike data fetching (CityBikes API)
-- Weather data integration (Open-Meteo API)
-- Rate limiting and retry logic
-- Data validation and quality checks
-- Storage patterns (CSV, JSON, Parquet)
-- Data versioning and documentation
-- Time-aligned dataset merging
-
-**API Integration Patterns:**
-- Error handling best practices
-- Retry mechanisms for failed requests
-- Response validation and parsing
-- Data storage conventions
-
----
-
 ## 🎯 Learning Objectives
 By the end of this module, you should be able to:
 - Fetch data from REST APIs
