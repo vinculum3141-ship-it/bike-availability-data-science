@@ -3,6 +3,43 @@
 ## 📌 Module Overview
 Learn collaboration workflows, code review, documentation, and professional data science practices.
 
+---
+
+## 🎓 Course Development Strategy
+
+### Pedagogical Approach for This Module
+Module 10 teaches **collaboration and deployment** - working in teams and production.
+
+**Scaffolding Strategy:**
+- **Initial**: 60% complete - Learn Git workflows and deployment
+- **Progressive**: 60% → 15% for independent project work
+- **Goal**: Collaborate effectively, deploy models, maintain production systems
+- **Approach**: Git basics → Team workflows → Code review → Deployment
+
+**Progressive Difficulty (Each Notebook):**
+- Part 1: Git Fundamentals (75% complete)
+- Part 2: Branching Strategy (50%)
+- Part 3: Code Review (35%)
+- Part 4: Deployment (25%)
+- Part 5: Production Maintenance (15% + capstone integration)
+
+**Solution Notebooks:**
+- Separate `*_SOLUTIONS.ipynb` with workflow examples
+- Multiple deployment strategies
+- Production best practices
+
+**Optional Challenges:**
+- CI/CD pipelines
+- Kubernetes deployments
+- Model monitoring systems
+
+**Capstone Integration:**
+- Apply all 10 modules to final project
+- Portfolio-ready deliverables
+- End-to-end system demonstration
+
+---
+
 ## 🎯 Learning Objectives
 By the end of this module, you should be able to:
 - Use Git effectively for collaboration
