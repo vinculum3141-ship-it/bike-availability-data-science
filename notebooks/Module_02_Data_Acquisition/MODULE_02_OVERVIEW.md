@@ -425,9 +425,9 @@ After completing Module 02:
 - 🔧 [Requests Library](https://requests.readthedocs.io/)
 
 ### Guides in This Repo
-- 📖 [Open Data Sources](../open_data_sources.md)
-- 💻 [Code Snippets](../code_snippets.md)
-- 📐 [Coding Standards](../coding_standards.md)
+- 📖 [Open Data Sources](../../docs/open_data_sources.md)
+- 💻 [Code Snippets](../../docs/code_snippets.md)
+- 📐 [Coding Standards](../../docs/coding_standards.md)
 
 ### External Learning
 - 📺 [REST API Concepts (YouTube)](https://www.youtube.com/watch?v=7YcW25PHnAA)
