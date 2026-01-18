@@ -1,7 +1,10 @@
 # Module 02: Data Acquisition
 
 ## 📌 Module Overview
-Learn how to acquire data from various sources including APIs, open data portals, and local files.
+Learn how to acquire data from various sources including APIs, open data portals, and local files. This module lays the **foundation for both learning tracks** — all students work with the same data sources.
+
+**🎯 Dual-Track Context**: This is a **foundation module** (shared by Track A and Track B). You'll learn about the OV-fiets system's operational constraints, which will help you understand the two prediction problems we'll explore in Module 3.
+
 **📖 Start Here**: Read [MODULE_02_OVERVIEW.md](MODULE_02_OVERVIEW.md) first! It covers:
 - Why data acquisition matters (80% of data science work!)
 - Common challenges and solutions
@@ -71,10 +74,12 @@ Module 2 uses **reduced scaffolding** for M2_01 & M2_02 (building on M1) and **p
 ## 🎯 Learning Objectives
 By the end of this module, you should be able to:
 - Fetch data from REST APIs
-- Access open data portals (Amsterdam, weather)
+- Access open data portals (Amsterdam OV-fiets, weather)
 - Handle API authentication and rate limits
 - Save and load data locally
 - Combine data from multiple sources
+- **NEW:** Understand OV-fiets operational constraints (15-min refresh, no docking stations, same-station returns)
+- **NEW:** Identify patterns that suggest two distinct use cases (commuter vs tourist)
 
 ## 📚 Module Content
 
@@ -154,6 +159,7 @@ Follow this pattern: `M2_{number}_{description}.ipynb`
 **Documentation**:
 - 📓 [Notebook Template](../notebook_template.ipynb) - Start here
 - 🌐 [Open Data Sources](../../docs/references/open_data_sources.md) - Where to get data
+- � [OV-fiets System Overview](../../docs/guides/ov_fiets_system_overview.md) - **NEW:** Understanding the domain
 - 📚 [Code Snippets](../../docs/references/code_snippets.md) - API and data loading examples
 - 📐 [Coding Standards](../../docs/standards/coding_standards.md) - Best practices
 - 📊 [Data Organization](../../data/README.md) - How to structure data
@@ -164,6 +170,14 @@ Before moving to Module 03, ensure:
 - [ ] Raw data is saved in `data/raw/`
 - [ ] You have both bike and weather data
 - [ ] Data sources are documented
+- [ ] **NEW:** You understand OV-fiets operational constraints (no docks, 15-min refresh, same-station returns)
+
+## 🔜 What's Next?
+**Module 3 Preview**: In the next module, you'll explore this data and discover **two distinct rental patterns** — commuters (short-term) and tourists (multi-day). At the end of Module 3, you'll choose your learning track:
+- **Track A (Beginner):** Classification for short-term predictions
+- **Track B (Advanced):** Regression + Time series for long-term forecasting
+
+💡 **Tip:** Keep the operational constraints in mind as you explore patterns in Module 3!
 - [ ] Code is clean and well-documented
 
 ---
