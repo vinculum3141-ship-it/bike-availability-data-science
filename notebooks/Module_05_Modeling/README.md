@@ -3,6 +3,57 @@
 ## 📌 Module Overview
 Build, train, and compare machine learning models to predict bike availability.
 
+---
+
+## 🎯 Track Selection: Choose Your Path
+
+**This module continues the track divergence from Module 4. Choose the track you started.**
+
+### Track A: Classification Models (Commuter Prediction)
+📁 **Folder:** `track_a_classification/`  
+**Goal:** Binary classification - predict bike availability in next 15 minutes  
+**Models:** Logistic Regression, Random Forest, XGBoost  
+**Metrics:** Precision, Recall, F1-Score, ROC-AUC  
+**Notebooks:**
+- M5A_01: Baseline models & train/test splits
+- M5A_02: Classification algorithms
+- M5A_03: Model selection & hyperparameter tuning
+
+→ [Go to Track A README](./track_a_classification/README.md)
+
+### Track B: Regression & Time Series (Multi-Day Prediction)
+📁 **Folder:** `track_b_regression/`  
+**Goal:** Regression + forecasting - predict number of bikes over 24-72 hours  
+**Models:** Linear/Ridge, Random Forest, ARIMA, Prophet  
+**Metrics:** RMSE, MAE, MAPE, R², Forecast Accuracy  
+**Notebooks:**
+- M5B_01: Regression models
+- M5B_02: Time series models (ARIMA, Prophet)
+- M5B_03: Uncertainty quantification
+
+→ [Go to Track B README](./track_b_regression/README.md)
+
+### Track Comparison
+
+| Aspect | Track A (Classification) | Track B (Regression/Time Series) |
+|--------|--------------------------|----------------------------------|
+| **Problem Type** | Binary Classification | Regression + Forecasting |
+| **Target** | Available/Not Available | Number of bikes (0-20+) |
+| **Algorithms** | Logistic, RF, XGBoost | Linear, RF, ARIMA, Prophet |
+| **Evaluation** | Precision, Recall, F1 | RMSE, MAE, MAPE |
+| **Complexity** | Moderate | High |
+| **Time Commitment** | 4-5 hours | 6-7 hours |
+| **Prerequisites** | Module 4 Track A | Module 4 Track B |
+| **Key Challenge** | Class imbalance | Time series validation |
+
+### Still Deciding?
+You should have chosen your track in Module 3. If you're switching tracks:
+- Review [Use Case Comparison Guide](../../docs/guides/use_case_comparison.md)
+- Check [Learning Pathways Guide](../../docs/guides/learning_pathways.md)
+- Complete corresponding Module 4 track first
+
+---
+
 ## ⚠️ Critical Domain Insight for Course Developers
 
 **OV-fiets System Characteristics:**
@@ -67,41 +118,65 @@ Module 5 introduces **machine learning modeling** with careful scaffolding for n
 
 ## 🎯 Learning Objectives
 By the end of this module, you should be able to:
-- Split data into train/validation/test sets
-- Build baseline models
-- Train multiple ML algorithms
-- Compare model performance
-- Select the best model
+- Split data into train/validation/test sets (time-series aware)
+- Build and evaluate baseline models
+- Train multiple ML algorithms appropriate for your use case
+- Compare model performance using relevant metrics
+- Select and save the best model for deployment
 
 ## ✅ Your Tasks
-Create the following notebooks in this folder:
 
-### M5_01_train_test_split.ipynb
-- Create train/validation/test splits
-- Handle temporal ordering (no future data leakage)
-- Ensure representative splits
-- Document split strategy
+**Choose your track and complete the notebooks in that folder:**
 
-### M5_02_baseline_models.ipynb
-- Create naive baseline (mean, median)
-- Build simple linear regression
-- Establish performance benchmarks
-- Document baseline results
+### Track A: Classification (`track_a_classification/`)
+1. **M5A_01_baseline_models.ipynb**
+   - Create time-series aware train/val/test splits
+   - Build baseline models (majority class, historical rates)
+   - Define evaluation metrics (precision, recall, F1, ROC-AUC)
+   - Establish performance benchmarks
 
-### M5_03_tree_models.ipynb
-- Train Decision Tree
-- Train Random Forest
-- Train Gradient Boosting (XGBoost)
-- Compare tree-based models
+2. **M5A_02_classification_models.ipynb**
+   - Train Logistic Regression (baseline ML model)
+   - Train Random Forest Classifier (non-linear patterns)
+   - Train XGBoost Classifier (gradient boosting)
+   - Handle class imbalance (class weights, SMOTE)
+   - Compare models on validation set
 
-### M5_04_model_comparison.ipynb
-- Compare all models
-- Analyze performance metrics (MAE, RMSE, R²)
-- Plot predictions vs actual
-- Select best performing model
+3. **M5A_03_model_selection.ipynb**
+   - Hyperparameter optimization (GridSearchCV)
+   - Cross-validation strategies (time-series aware)
+   - Feature importance analysis
+   - Model interpretation with SHAP
+   - Select final model and evaluate on test set
+   - Save model with joblib
+
+### Track B: Regression & Time Series (`track_b_regression/`)
+1. **M5B_01_regression_models.ipynb**
+   - Create time-series aware train/val/test splits
+   - Train Linear/Ridge/Lasso Regression
+   - Train Random Forest Regressor
+   - Train XGBoost Regressor
+   - Compare RMSE, MAE, MAPE, R²
+   - Feature importance analysis
+
+2. **M5B_02_time_series_models.ipynb**
+   - Build ARIMA/SARIMA models (univariate forecasting)
+   - Train Prophet with holidays and events
+   - Multi-step ahead predictions (24h, 48h, 72h)
+   - Seasonality and trend decomposition
+   - Forecast accuracy evaluation
+
+3. **M5B_03_uncertainty_quantification.ipynb**
+   - Build prediction intervals (95% confidence)
+   - Quantile regression (10th, 50th, 90th percentiles)
+   - Ensemble methods for uncertainty
+   - Probabilistic forecasting with Prophet
+   - Visualize uncertainty bands
+   - Communicate forecast ranges
 
 ## 📝 Naming Convention
-Follow this pattern: `M5_{number}_{description}.ipynb`
+- **Track A**: `M5A_{number}_{description}.ipynb` (classification notebooks)
+- **Track B**: `M5B_{number}_{description}.ipynb` (regression/time series notebooks)
 
 ## 💡 Tips
 - Start with the [notebook template](../notebook_template.ipynb) for consistent structure
@@ -140,11 +215,26 @@ For regression tasks, consider:
 
 ## ✨ Checkpoint
 Before moving to Module 06, ensure:
-- [ ] You have train/validation/test splits
-- [ ] Baseline model is established
-- [ ] Multiple ML models are trained
-- [ ] Model performances are compared
-- [ ] Best model is selected and saved
+
+**Track A Checklist:**
+- [ ] Time-series aware train/val/test splits created
+- [ ] Baseline models established (majority class, historical rates)
+- [ ] Classification models trained (Logistic, RF, XGBoost)
+- [ ] Class imbalance handled appropriately
+- [ ] Models compared on precision, recall, F1-score
+- [ ] Hyperparameters tuned with cross-validation
+- [ ] Final model selected and saved
+
+**Track B Checklist:**
+- [ ] Time-series aware train/val/test splits created
+- [ ] Regression models trained (Linear, RF, XGBoost)
+- [ ] Time series models built (ARIMA, Prophet)
+- [ ] Multi-horizon forecasts evaluated (24h, 48h, 72h)
+- [ ] Uncertainty quantification implemented
+- [ ] Models compared on RMSE, MAE, MAPE
+- [ ] Final model(s) selected and saved with uncertainty bounds
 
 ---
-**Next Module:** Module 06 - Validation & Governance
+**Next Module:** Module 06 - Validation & Governance  
+- **Track A:** Classification model validation, confusion matrices
+- **Track B:** Time series validation, backtesting, forecast evaluation
