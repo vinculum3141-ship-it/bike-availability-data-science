@@ -3,6 +3,33 @@
 ## 📌 Module Overview
 Validate model performance, ensure fairness, and establish governance practices for production deployment.
 
+---
+
+## 🎯 Track-Aware Validation
+
+**Both tracks converge in Modules 6-10, but validation approaches differ by model type.**
+
+### Validation Differences by Track
+
+| Aspect | Track A (Classification) | Track B (Regression/Time Series) |
+|--------|-------------------------|----------------------------------|
+| **Primary Metrics** | Confusion matrix, precision, recall, F1 | RMSE, MAE, residual plots |
+| **Cross-Validation** | Stratified K-fold (class balance) | Time-series CV (rolling window) |
+| **Error Analysis** | False positives/negatives analysis | Residual analysis, forecast errors |
+| **Threshold Tuning** | ROC curve, precision-recall tradeoff | N/A (continuous predictions) |
+| **Key Risks** | Class imbalance bias | Overfitting to trends, data leakage |
+| **Business Validation** | "How often do we mislead commuters?" | "How accurate are our forecasts?" |
+
+### Common Validation Tasks (Both Tracks)
+- Test set evaluation (final performance)
+- Feature importance validation
+- Model assumptions checking
+- Edge case analysis
+- Documentation and model cards
+- Governance framework
+
+---
+
 ## ⚠️ Critical Domain Insight for Course Developers
 
 **OV-fiets System Characteristics:**
@@ -70,14 +97,87 @@ Module 6 teaches **validation and governance** - critical for production ML.
 
 ## 🎯 Learning Objectives
 By the end of this module, you should be able to:
-- Validate models on test data
-- Perform error analysis
-- Check model assumptions
-- Document model limitations
-- Establish model governance practices
+- Validate models on test data using appropriate metrics for your problem type
+- Perform error analysis (confusion matrices for classification, residual plots for regression)
+- Check model assumptions and identify violations
+- Document model limitations and system constraints
+- Establish model governance practices for production
 
 ## ✅ Your Tasks
-Create the following notebooks in this folder:
+
+**Complete these notebooks - examples provided for both tracks:**
+
+### M6_01_test_evaluation.ipynb
+**Track A examples:**
+- Evaluate classification model on test set
+- Generate confusion matrix and classification report
+- Analyze false positives and false negatives
+- Calculate precision, recall, F1-score, ROC-AUC
+- Threshold tuning for business requirements
+
+**Track B examples:**
+- Evaluate regression/time series models on test set
+- Calculate RMSE, MAE, MAPE for different horizons
+- Plot actual vs predicted values
+- Analyze residuals (patterns, heteroscedasticity)
+- Multi-step forecast evaluation (24h, 48h, 72h)
+
+### M6_02_error_analysis.ipynb
+**Track A examples:**
+- Identify misclassification patterns (which stations? which times?)
+- Analyze false negative cases (predicted available but empty)
+- Analyze false positive cases (predicted unavailable but bikes present)
+- Rush hour performance vs off-peak
+- Weather impact on prediction errors
+
+**Track B examples:**
+- Identify large forecast errors (which stations? which periods?)
+- Analyze systematic biases (over/under-prediction)
+- Seasonal error patterns
+- Event-driven anomalies
+- Uncertainty calibration (are prediction intervals accurate?)
+
+### M6_03_model_assumptions.ipynb
+**Track A examples:**
+- Check class balance assumptions
+- Validate feature independence (multicollinearity)
+- Examine prediction calibration (predicted probabilities vs actual rates)
+- Test model on different time periods
+
+**Track B examples:**
+- Check stationarity assumptions (for ARIMA)
+- Validate residual normality
+- Test for autocorrelation in residuals
+- Check homoscedasticity
+- Validate on different seasons/periods
+
+### M6_04_documentation.ipynb
+**Both tracks:**
+- Create model card (purpose, limitations, metrics)
+- Document OV-fiets system constraints
+- List assumptions and edge cases
+- Specify monitoring requirements
+- Define retraining triggers
+
+**Track A specific:**
+- Decision threshold justification
+- Class imbalance handling strategy
+- False negative risk mitigation
+
+**Track B specific:**
+- Forecast horizon limitations
+- Uncertainty quantification methodology
+- Seasonality handling approach
+
+### M6_05_governance.ipynb
+**Both tracks:**
+- Establish model update policy
+- Define performance degradation thresholds
+- Create incident response plan
+- Document data quality requirements
+- Set up model versioning strategy
+
+## 📝 Naming Convention
 
 ### M6_01_model_validation.ipynb
 - Evaluate on held-out test data
@@ -137,11 +237,28 @@ Follow this pattern: `M6_{number}_{description}.ipynb`
 
 ## ✨ Checkpoint
 Before moving to Module 07, ensure:
-- [ ] Model is validated on test data
-- [ ] Error patterns are analyzed
-- [ ] Model is interpretable
-- [ ] Documentation is complete
-- [ ] Limitations are clearly stated
+
+**Track A (Classification):**
+- [ ] Test set evaluation complete (confusion matrix, classification report)
+- [ ] False positive/negative patterns analyzed
+- [ ] Threshold tuning justified for business needs
+- [ ] Prediction calibration validated
+- [ ] Model card created with classification-specific details
+
+**Track B (Regression/Time Series):**
+- [ ] Test set evaluation complete for all horizons (24h, 48h, 72h)
+- [ ] Residual analysis performed (patterns, normality, autocorrelation)
+- [ ] Forecast accuracy assessed across seasons
+- [ ] Uncertainty quantification validated
+- [ ] Model card created with forecasting-specific details
+
+**Both Tracks:**
+- [ ] OV-fiets system constraints documented
+- [ ] Error patterns analyzed and understood
+- [ ] Model limitations clearly stated
+- [ ] Governance framework established
 
 ---
-**Next Module:** Module 07 - Visualization
+**Next Module:** Module 07 - Visualization  
+- **Track A:** Classification dashboards, confusion matrix heatmaps
+- **Track B:** Forecast plots with uncertainty bands, residual analysis

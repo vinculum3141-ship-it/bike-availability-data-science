@@ -5,6 +5,31 @@ Create compelling visualizations and dashboards to communicate insights to stake
 
 ---
 
+## 🎯 Track-Aware Visualization
+
+**Visualization needs differ significantly between classification and regression/forecasting models.**
+
+### Visualization Differences by Track
+
+| Aspect | Track A (Classification) | Track B (Regression/Time Series) |
+|--------|-------------------------|----------------------------------|
+| **Primary Viz** | Confusion matrix heatmaps, ROC curves | Time series plots, forecast bands |
+| **Performance Display** | Precision/Recall bars, F1 scores | RMSE trends, residual plots |
+| **Predictions** | Binary indicators (available/not) | Numeric values with uncertainty |
+| **Dashboard Focus** | Real-time availability alerts | Multi-day forecast calendars |
+| **Key Insights** | False positive/negative patterns | Seasonal trends, forecast accuracy |
+| **User Interface** | Traffic light indicators, alerts | Line charts with confidence intervals |
+
+### Common Visualization Tasks (Both Tracks)
+- Feature importance charts
+- Model comparison plots
+- Station-level performance maps
+- Time-of-day patterns
+- Weather impact visualizations
+- Stakeholder reports
+
+---
+
 ## 🎓 Course Development Strategy
 
 ### Pedagogical Approach for This Module
@@ -37,37 +62,89 @@ Module 7 teaches **visualization and communication** - essential data science sk
 
 ## 🎯 Learning Objectives
 By the end of this module, you should be able to:
-- Design effective visualizations
-- Build interactive dashboards
+- Design effective visualizations appropriate for your model type
+- Build interactive dashboards for classification or forecasting
 - Communicate insights to non-technical audiences
 - Create reusable visualization components
 
 ## ✅ Your Tasks
-Create the following notebooks in this folder:
+
+**Complete these notebooks - examples provided for both tracks:**
 
 ### M7_01_static_visualizations.ipynb
-- Create publication-quality plots
-- Design effective chart types
-- Use color and layout strategically
-- Export visualizations
+**Track A examples:**
+- Confusion matrix heatmaps
+- ROC curve and precision-recall curves
+- Feature importance bar charts
+- Classification error patterns by time/station
+- Threshold sensitivity analysis
+
+**Track B examples:**
+- Time series plots with actuals vs predictions
+- Residual plots (scatter, histogram, Q-Q)
+- Forecast accuracy by horizon (24h, 48h, 72h)
+- Seasonal decomposition plots
+- Uncertainty band visualizations
+
+**Both tracks:**
+- Station-level performance maps
+- Weather impact scatter plots
+- Publication-quality exports
 
 ### M7_02_interactive_plots.ipynb
-- Build interactive plots with Plotly
-- Add hover information
-- Create linked visualizations
-- Enable filtering and selection
+**Track A examples:**
+- Interactive confusion matrix (drill-down by station)
+- ROC curve with threshold slider
+- Time-series classification performance
+- False positive/negative exploration tool
+- Real-time availability status map
+
+**Track B examples:**
+- Interactive forecast plots with zoom/pan
+- Multi-horizon forecast comparison
+- Uncertainty interval adjustment
+- Seasonal pattern explorer
+- Forecast vs actual comparison tool
+
+**Both tracks:**
+- Plotly/Bokeh interactive charts
+- Hover information for context
+- Linked visualizations (brush & link)
 
 ### M7_03_dashboard_prototype.ipynb
-- Design dashboard layout
-- Select key metrics and KPIs
-- Create multiple views
-- Test dashboard interactivity
+**Track A: Commuter Prediction Dashboard**
+- Current availability status (all stations)
+- Prediction confidence indicators
+- False alarm rate monitoring
+- Rush hour performance metrics
+- Station-level drill-down
+
+**Track B: Multi-Day Forecast Dashboard**
+- 3-day forecast calendar view
+- Confidence interval displays
+- Historical accuracy trends
+- Seasonal pattern indicators
+- Event impact visualization
+
+**Both tracks:**
+- Key metrics and KPIs
+- Performance monitoring charts
+- Alert thresholds and notifications
 
 ### M7_04_streamlit_app.ipynb
-- Plan Streamlit dashboard structure
-- Design user interface
-- Implement dashboard in `apps/streamlit_dashboard.py`
-- Test and refine
+**Track A: Build classification dashboard in `apps/streamlit_dashboard.py`**
+- Real-time bike availability predictions
+- Station selection and filtering
+- Prediction confidence display
+- Historical accuracy tracking
+- Alert configuration
+
+**Track B: Build forecasting dashboard in `apps/streamlit_dashboard.py`**
+- Multi-day forecast display
+- Uncertainty visualization
+- Horizon selection (24h/48h/72h)
+- Forecast accuracy metrics
+- Event calendar integration
 
 ## 📝 Naming Convention
 Follow this pattern: `M7_{number}_{description}.ipynb`
@@ -103,11 +180,28 @@ Follow this pattern: `M7_{number}_{description}.ipynb`
 
 ## ✨ Checkpoint
 Before moving to Module 08, ensure:
-- [ ] You have effective static visualizations
-- [ ] Interactive plots are implemented
-- [ ] Dashboard prototype is tested
-- [ ] Streamlit app is functional
-- [ ] Visualizations communicate insights clearly
+
+**Track A (Classification):**
+- [ ] Confusion matrix and ROC curves created
+- [ ] Classification performance visualizations complete
+- [ ] Interactive classification dashboard prototyped
+- [ ] Streamlit app shows real-time availability predictions
+- [ ] Stakeholder-friendly alert displays implemented
+
+**Track B (Regression/Time Series):**
+- [ ] Forecast plots with uncertainty bands created
+- [ ] Residual analysis visualizations complete
+- [ ] Interactive forecast dashboard prototyped
+- [ ] Streamlit app shows multi-day forecasts
+- [ ] Uncertainty communication clear and intuitive
+
+**Both Tracks:**
+- [ ] Static publication-quality plots exported
+- [ ] Interactive Plotly/Bokeh charts functional
+- [ ] Dashboard tested with sample users
+- [ ] Visualizations accessible and colorblind-friendly
 
 ---
-**Next Module:** Module 08 - Automation
+**Next Module:** Module 08 - Automation  
+- **Track A:** Classification prediction pipelines
+- **Track B:** Time series forecasting pipelines

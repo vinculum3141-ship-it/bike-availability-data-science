@@ -5,6 +5,31 @@ Learn collaboration workflows, code review, documentation, and professional data
 
 ---
 
+## 🎯 Track-Aware Collaboration
+
+**Communication needs differ when presenting classification vs forecasting models.**
+
+### Stakeholder Communication Differences
+
+| Aspect | Track A (Classification) | Track B (Time Series) |
+|--------|-------------------------|----------------------|
+| **Business Question** | "Will bikes be available?" | "How many bikes over 3 days?" |
+| **Audience** | Commuters, operations team | Tourists, capacity planners |
+| **Key Metric** | False negative rate | Forecast accuracy (MAPE) |
+| **Visualization** | Alert dashboard, traffic lights | Forecast calendars, trend charts |
+| **Uncertainty** | Prediction confidence (%) | Confidence intervals (±N bikes) |
+| **Decision Support** | "Go to this station now" | "Plan your trip for Tuesday AM" |
+| **Success Story** | "Reduced empty station visits by 40%" | "Forecast accuracy within ±2 bikes" |
+
+### Common Collaboration Tasks (Both Tracks)
+- Git workflows and branching
+- Code review practices
+- Documentation standards
+- Deployment strategies
+- Production monitoring
+
+---
+
 ## 🎓 Course Development Strategy
 
 ### Pedagogical Approach for This Module
@@ -49,15 +74,37 @@ By the end of this module, you should be able to:
 - Prepare for production deployment
 
 ## ✅ Your Tasks
-Create the following notebooks in this folder:
+
+**Complete these notebooks - examples provided for both tracks:**
 
 ### M10_01_git_workflow.ipynb
-- Practice Git branching strategies
-- Create meaningful commit messages
-- Handle merge conflicts
-- Use pull requests effectively
+**Both tracks (same practices):**
+- Git branching strategies (feature/bugfix branches)
+- Meaningful commit messages with context
+- Merge conflict resolution
+- Pull request reviews
+- Code collaboration workflows
 
 ### M10_02_code_quality.ipynb
+**Track A: Classification code standards**
+- Threshold configuration management
+- Classification pipeline modularity
+- Unit tests for prediction logic
+- Alert generation testing
+
+**Track B: Forecasting code standards**
+- Time series validation (no data leakage)
+- Forecast pipeline modularity
+- Unit tests for windowing logic
+- Uncertainty calculation testing
+
+**Both tracks:**
+- PEP 8 compliance
+- Type hints and docstrings
+- Error handling patterns
+- Code review checklist
+
+### M10_03_documentation.ipynb
 - Write clean, readable code
 - Add docstrings and type hints
 - Use linting tools (pylint, black)

@@ -5,6 +5,30 @@ Learn to track experiments, compare models systematically, and manage ML lifecyc
 
 ---
 
+## 🎯 Track-Aware Experiment Tracking
+
+**Metrics and experiment design differ by model type.**
+
+### Experiment Tracking Differences
+
+| Aspect | Track A (Classification) | Track B (Time Series) |
+|--------|-------------------------|----------------------|
+| **MLflow Metrics** | Precision, recall, F1, ROC-AUC | RMSE, MAE, MAPE, R² |
+| **Key Parameters** | Class weights, threshold, C/max_depth | Lag order, seasonality, alpha |
+| **Artifacts** | Model pickle, confusion matrix | Model pickle, forecast plots |
+| **Comparison Focus** | Recall optimization | Multi-horizon accuracy |
+| **A/B Testing** | Prediction accuracy vs baseline | Forecast RMSE improvement |
+| **Retraining Triggers** | F1 drop below threshold | RMSE increase >10% |
+
+### Common Experiment Tasks (Both Tracks)
+- MLflow tracking setup
+- Hyperparameter optimization
+- Model versioning
+- Experiment comparison
+- Best model selection
+
+---
+
 ## 🎓 Course Development Strategy
 
 ### Pedagogical Approach for This Module
@@ -44,19 +68,43 @@ By the end of this module, you should be able to:
 - Follow experiment best practices
 
 ## ✅ Your Tasks
-Create the following notebooks in this folder:
+
+**Complete these notebooks - examples provided for both tracks:**
 
 ### M9_01_mlflow_setup.ipynb
-- Set up MLflow tracking
-- Log parameters and metrics
-- Save model artifacts
-- Create experiment runs
+**Track A: Log classification experiments**
+- Track precision, recall, F1, ROC-AUC
+- Log class weights and threshold
+- Save confusion matrices
+- Track false negative rate
+
+**Track B: Log forecasting experiments**
+- Track RMSE, MAE, MAPE by horizon
+- Log ARIMA orders, Prophet parameters
+- Save forecast plots with uncertainty
+- Track seasonal decomposition
+
+**Both tracks:**
+- MLflow server setup
+- Experiment organization
+- Model artifact management
 
 ### M9_02_hyperparameter_tuning.ipynb
-- Define hyperparameter search space
-- Implement grid search or random search
-- Track tuning experiments
-- Select optimal hyperparameters
+**Track A: Tune classification models**
+- XGBoost: max_depth, learning_rate, scale_pos_weight
+- Random Forest: n_estimators, max_features
+- Optimize for recall (minimize false negatives)
+
+**Track B: Tune forecasting models**
+- ARIMA: (p,d,q) orders, seasonal parameters
+- Prophet: changepoint_prior_scale, seasonality_prior_scale
+- XGBoost: lag features, window sizes
+- Optimize for multi-horizon RMSE
+
+**Both tracks:**
+- Grid/Random search with MLflow
+- Cross-validation strategies
+- Best model selection
 
 ### M9_03_model_versioning.ipynb
 - Version control models

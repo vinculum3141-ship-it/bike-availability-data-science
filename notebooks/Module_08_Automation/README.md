@@ -5,6 +5,32 @@ Automate your data science workflow by creating reproducible pipelines.
 
 ---
 
+## 🎯 Track-Aware Pipelines
+
+**Pipeline design differs between classification and forecasting systems.**
+
+### Pipeline Differences by Track
+
+| Aspect | Track A (Classification) | Track B (Time Series) |
+|--------|-------------------------|----------------------|
+| **Prediction Frequency** | Real-time (every 15 min) | Batch (daily forecasts) |
+| **Data Requirements** | Current features only | Historical windows (7+ days) |
+| **Feature Engineering** | Rush hour, weather, trains | Lag features, rolling stats, seasonality |
+| **Model Inputs** | Single timestamp features | Time series sequences |
+| **Output Format** | Binary predictions + probability | Numeric forecasts + intervals |
+| **Retraining Trigger** | Performance degradation | Seasonal changes, drift |
+| **Monitoring Focus** | False negative rate | Forecast RMSE by horizon |
+
+### Common Pipeline Components (Both Tracks)
+- Data acquisition automation
+- Feature engineering scripts
+- Model training workflows
+- Prediction generation
+- Performance monitoring
+- Scheduled retraining
+
+---
+
 ## 🎓 Course Development Strategy
 
 ### Pedagogical Approach for This Module
@@ -44,19 +70,44 @@ By the end of this module, you should be able to:
 - Build reproducible workflows
 
 ## ✅ Your Tasks
-Create the following notebooks in this folder:
+
+**Complete these notebooks - examples provided for both tracks:**
 
 ### M8_01_pipeline_design.ipynb
-- Design pipeline architecture
-- Identify pipeline stages
-- Define inputs and outputs
-- Plan error handling
+**Track A: Real-time classification pipeline**
+- 15-minute prediction cycle
+- Current feature extraction (weather, trains, time)
+- Binary classification output
+- Alert generation logic
+
+**Track B: Daily forecasting pipeline**
+- 24-72 hour forecast generation
+- Historical data windowing (7-30 days)
+- Multi-horizon predictions
+- Uncertainty interval calculation
+
+**Both tracks:**
+- Pipeline architecture design
+- Error handling strategies
+- Input/output specifications
 
 ### M8_02_data_pipeline.ipynb
-- Automate data acquisition
-- Create preprocessing pipeline
-- Implement feature engineering pipeline
-- Test pipeline components
+**Track A examples:**
+- API polling every 15 minutes
+- Current weather data acquisition
+- Train schedule integration
+- Feature vector assembly
+
+**Track B examples:**
+- Daily batch data collection
+- Weather forecast API integration
+- Event calendar updates
+- Time series windowing
+
+**Both tracks:**
+- Data quality checks
+- Missing value handling
+- Pipeline testing
 
 ### M8_03_model_pipeline.ipynb
 - Create training pipeline
