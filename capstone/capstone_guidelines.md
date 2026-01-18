@@ -3,6 +3,32 @@
 ## Overview
 The capstone project is your opportunity to demonstrate mastery of the entire data science lifecycle by building an end-to-end bike availability prediction system.
 
+---
+
+## 🛤️ Choose Your Track
+
+**You must select one of two capstone tracks based on your learning path:**
+
+### Track A: Real-Time Commuter Availability (Classification)
+**Project Goal:** Build a binary classification system that predicts whether bikes will be available at a station in the next 15 minutes.
+- **Audience:** Daily commuters who need immediate answers
+- **Prediction Type:** Binary (Available/Not Available) + confidence
+- **Time Horizon:** 15 minutes ahead
+- **Use Case:** "Should I walk to this station or choose another?"
+- **Recommended if you completed:** Module 4 Track A & Module 5 Track A
+
+### Track B: Multi-Day Tourist Forecasting (Regression)
+**Project Goal:** Build a time series forecasting system that predicts bike availability 24-72 hours ahead.
+- **Audience:** Tourists planning their visit
+- **Prediction Type:** Continuous (number of available bikes) + uncertainty intervals
+- **Time Horizon:** 24-72 hours ahead
+- **Use Case:** "How many bikes will be available Tuesday morning?"
+- **Recommended if you completed:** Module 4 Track B & Module 5 Track B
+
+**Note:** You may also attempt **both tracks** if you completed all sub-track modules and want an advanced challenge.
+
+---
+
 ## 🎯 Project Objectives
 
 Build a complete ML system that:
@@ -15,21 +41,36 @@ Build a complete ML system that:
 ## 📋 Project Requirements
 
 ### 1. Data Acquisition (15%)
+**Both tracks:**
 - [ ] Fetch data from at least 2 different sources (bike API, weather API)
 - [ ] Collect at least 3 months of historical data
 - [ ] Handle API rate limits and errors gracefully
 - [ ] Save raw data with proper versioning
 - [ ] Document all data sources
 
+**Track A additional:** Real-time data integration, train schedule API (optional)
+**Track B additional:** Weather forecast API, event calendar API (optional)
+
 ### 2. Data Processing & Feature Engineering (20%)
+**Both tracks:**
 - [ ] Clean and validate raw data
 - [ ] Handle missing values appropriately
-- [ ] Create at least 10 meaningful features including:
-  - Temporal features (hour, day, season)
-  - Weather features
-  - Lag and rolling statistics
 - [ ] Avoid data leakage
 - [ ] Document feature engineering decisions
+
+**Track A (Classification) - Create 10+ features including:**
+- [ ] Rush hour indicators (7-9 AM, 5-7 PM)
+- [ ] Cyclical time encodings (sin/cos hour, day)
+- [ ] Current weather conditions
+- [ ] Train arrival proximity (if using train API)
+- [ ] Weekend/holiday flags
+
+**Track B (Time Series) - Create 10+ features including:**
+- [ ] Lag features (7-day, 14-day historical patterns)
+- [ ] Rolling statistics (mean, std over 7-day windows)
+- [ ] Seasonal decomposition components
+- [ ] Weather forecast features (24-72h ahead)
+- [ ] Event calendar indicators (festivals, holidays)
 
 ### 3. Exploratory Data Analysis (15%)
 - [ ] Generate automated profiling report
@@ -39,27 +80,55 @@ Build a complete ML system that:
 - [ ] Document data quality issues
 
 ### 4. Modeling (25%)
-- [ ] Create proper train/validation/test splits
-- [ ] Build baseline model
-- [ ] Train at least 3 different ML algorithms
-- [ ] Perform hyperparameter tuning
-- [ ] Compare models systematically
-- [ ] Select and justify final model
-- [ ] Document model performance (MAE, RMSE, R²)
+**Track A (Classification):**
+- [ ] Create proper train/validation/test splits (time-based)
+- [ ] Build baseline model (majority class classifier)
+- [ ] Train at least 3 algorithms (e.g., Logistic Regression, Random Forest, XGBoost)
+- [ ] Optimize for recall (minimize false negatives)
+- [ ] Perform hyperparameter tuning (focus on class imbalance)
+- [ ] Document performance: **Precision, Recall, F1, ROC-AUC**
+- [ ] Determine optimal classification threshold
+
+**Track B (Time Series):**
+- [ ] Create proper train/validation/test splits (time-series aware)
+- [ ] Build baseline model (seasonal naive, moving average)
+- [ ] Train at least 3 approaches (e.g., Linear Regression, ARIMA/Prophet, XGBoost)
+- [ ] Evaluate multi-horizon forecasts (24h, 48h, 72h)
+- [ ] Perform hyperparameter tuning (lag orders, seasonality)
+- [ ] Document performance: **RMSE, MAE, MAPE by horizon**
+- [ ] Quantify prediction uncertainty (confidence intervals)
 
 ### 5. Validation & Governance (10%)
+**Track A (Classification):**
 - [ ] Validate on held-out test data
-- [ ] Perform error analysis
-- [ ] Create model documentation/card
-- [ ] Document limitations and assumptions
-- [ ] Define monitoring strategy
+- [ ] Analyze confusion matrix (focus on false negatives)
+- [ ] Perform error analysis by time of day, station type
+- [ ] Create model card with precision/recall tradeoffs
+- [ ] Define monitoring: track F1 score, false negative rate
+
+**Track B (Time Series):**
+- [ ] Validate on held-out test data
+- [ ] Analyze residual plots and autocorrelation
+- [ ] Perform error analysis by forecast horizon
+- [ ] Create model card with multi-horizon accuracy
+- [ ] Define monitoring: track RMSE degradation, seasonal drift
 
 ### 6. Visualization & Dashboard (10%)
-- [ ] Create interactive dashboard (Streamlit)
-- [ ] Include key metrics and KPIs
-- [ ] Show model predictions vs actual
-- [ ] Enable user interaction (filters, selections)
-- [ ] Design for non-technical stakeholders
+**Track A (Classification Dashboard):**
+- [ ] Real-time station availability predictions
+- [ ] Confidence scores for each prediction
+- [ ] Confusion matrix visualization
+- [ ] ROC curve and threshold selector
+- [ ] Station map with color-coded predictions
+- [ ] Design for commuter decision-making
+
+**Track B (Forecasting Dashboard):**
+- [ ] Multi-day forecast calendar (24-72h ahead)
+- [ ] Time series plots with uncertainty bands
+- [ ] Forecast vs actual comparison
+- [ ] Residual analysis plots
+- [ ] Station selector with historical trends
+- [ ] Design for trip planning
 
 ### 7. Automation & Best Practices (5%)
 - [ ] Create reproducible pipeline

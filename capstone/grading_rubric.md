@@ -4,6 +4,22 @@
 
 ---
 
+## 🛤️ Track Selection
+
+**You will be graded according to the track you selected:**
+- **Track A:** Real-Time Commuter Availability (Classification)
+- **Track B:** Multi-Day Tourist Forecasting (Regression/Time Series)
+- **Both Tracks:** Advanced challenge (graded on both criteria)
+
+**Track-specific differences:**
+- **Feature Engineering:** Track A focuses on real-time features; Track B on historical patterns
+- **Modeling:** Track A uses classification algorithms; Track B uses regression/time series
+- **Metrics:** Track A uses precision/recall/F1; Track B uses RMSE/MAE/MAPE
+- **Validation:** Track A analyzes confusion matrices; Track B analyzes residuals and forecast horizons
+- **Dashboard:** Track A shows classification alerts; Track B shows forecast calendars
+
+---
+
 ## 1. Data Acquisition (15 points)
 
 ### Excellent (13-15 points)
@@ -38,13 +54,17 @@
 ### Excellent (17-20 points)
 - Comprehensive data cleaning and validation
 - Creative and meaningful feature engineering (10+ features)
-- No data leakage
+- **Track A:** Rush hour indicators, cyclical encodings, current weather, train proximity
+- **Track B:** Lag features (7-14 day), rolling statistics, seasonal components, weather forecasts
+- No data leakage (critical for time series!)
 - Proper handling of missing values and outliers
 - Well-documented feature definitions and rationale
 
 ### Good (14-16 points)
 - Solid data cleaning process
 - Good set of features (7-9 features)
+- **Track A:** Basic temporal and weather features
+- **Track B:** Some lag features and rolling statistics
 - Minimal data leakage risk
 - Adequate handling of missing data
 - Features are documented
@@ -52,6 +72,8 @@
 ### Satisfactory (10-13 points)
 - Basic cleaning performed
 - Limited features (4-6 features)
+- **Track A:** Only basic hour/day features
+- **Track B:** Only simple lag features without rolling statistics
 - Some potential data leakage
 - Simple missing data handling
 - Minimal documentation
@@ -59,8 +81,46 @@
 ### Needs Improvement (0-9 points)
 - Insufficient data cleaning
 - Very few or poor features (<4)
-- Clear data leakage issues
+- Clear data leakage issues (especially problematic for Track B)
 - Poor handling of data quality issues
+
+---
+
+## 4. Modeling (25 points)
+
+### Excellent (22-25 points)
+**Track A (Classification):**
+- Implements 3+ algorithms (Logistic Regression, Random Forest, XGBoost, etc.)
+- Properly handles class imbalance (SMOTE, class weights)
+- Optimizes for recall to minimize false negatives
+- Achieves F1 > 0.75 and Recall > 0.80
+- Determines optimal classification threshold
+- Thorough hyperparameter tuning
+
+**Track B (Time Series):**
+- Implements 3+ approaches (Linear/Ridge, ARIMA/Prophet, XGBoost)
+- Proper time-series cross-validation
+- Multi-horizon evaluation (24h, 48h, 72h)
+- Achieves MAPE < 15% for 24h forecast
+- Quantifies uncertainty (confidence intervals)
+- Thorough hyperparameter tuning
+
+**Both tracks:** Well-justified model selection, excellent documentation
+
+### Good (18-21 points)
+**Track A:** 3 algorithms, basic class imbalance handling, F1 > 0.65, some tuning
+**Track B:** 3 approaches, time-series aware splits, MAPE < 20%, basic uncertainty quantification
+**Both:** Adequate model comparison and documentation
+
+### Satisfactory (13-17 points)
+**Track A:** 2 algorithms, minimal imbalance handling, F1 > 0.50, limited tuning
+**Track B:** 2 approaches, simple splits, MAPE < 30%, no uncertainty quantification
+**Both:** Basic model selection, limited documentation
+
+### Needs Improvement (0-12 points)
+**Track A:** Single algorithm, ignores class imbalance, F1 < 0.50
+**Track B:** Single approach, data leakage in splits, MAPE > 30%
+**Both:** Poor model performance, insufficient documentation
 
 ---
 

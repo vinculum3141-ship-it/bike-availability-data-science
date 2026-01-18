@@ -12,6 +12,17 @@ This self-evaluation tool helps you assess your capstone project independently. 
 
 ---
 
+## 🛤️ Your Track
+
+**Which track did you complete? (Check one)**
+- [ ] **Track A:** Real-Time Commuter Availability (Classification)
+- [ ] **Track B:** Multi-Day Tourist Forecasting (Time Series)
+- [ ] **Both Tracks:** Advanced challenge
+
+**Use the evaluation criteria that match your track below.**
+
+---
+
 ## How to Use This Guide
 
 1. **Work through each section** as you complete your project
@@ -65,18 +76,32 @@ This self-evaluation tool helps you assess your capstone project independently. 
 
 ## Section 2: Data Processing & Feature Engineering (20 points)
 
-### Checklist
+### Checklist (Both Tracks)
 
 - [ ] Handle missing values appropriately
 - [ ] Identify and handle outliers
-- [ ] Create time-based features (hour, day of week, etc.)
-- [ ] Create weather-related features
-- [ ] Create lag features (previous hour's data)
-- [ ] Create interaction features
 - [ ] Document all features with descriptions
-- [ ] Verify no data leakage (future → past)
+- [ ] Verify no data leakage (future → past) **CRITICAL for Track B!**
 - [ ] At least 10 meaningful features created
 - [ ] Features are scaled/normalized if needed
+
+### Track A (Classification) - Additional Checklist
+
+- [ ] Rush hour indicators (7-9 AM, 5-7 PM binary flags)
+- [ ] Cyclical time encodings (sin/cos for hour, day of week)
+- [ ] Current weather conditions (temp, rain, wind)
+- [ ] Weekend/holiday flags
+- [ ] Train arrival proximity (if using train API)
+- [ ] Features capture immediate context (next 15 min)
+
+### Track B (Time Series) - Additional Checklist
+
+- [ ] Lag features (7-day, 14-day historical patterns)
+- [ ] Rolling statistics (7-day mean, std, min, max)
+- [ ] Seasonal decomposition (trend, seasonal, residual components)
+- [ ] Weather forecast features (24-72h ahead predictions)
+- [ ] Event calendar indicators (festivals, holidays, weekends)
+- [ ] Features capture temporal dependencies
 
 ### Self-Rating (1-5): _____
 
@@ -170,7 +195,49 @@ This self-evaluation tool helps you assess your capstone project independently. 
 
 ## Section 4: Modeling (25 points)
 
-### Checklist
+### Track A (Classification) Checklist
+
+- [ ] Baseline model (majority class classifier)
+- [ ] Trained 3+ algorithms (Logistic Regression, Random Forest, XGBoost)
+- [ ] Time-based train/validation/test splits (no random shuffle!)
+- [ ] Handled class imbalance (SMOTE, class weights, or threshold tuning)
+- [ ] Optimized for recall (minimize false negatives)
+- [ ] Hyperparameter tuning (GridSearchCV or RandomizedSearchCV)
+- [ ] Documented metrics: Precision, Recall, F1, ROC-AUC
+- [ ] Determined optimal classification threshold
+- [ ] F1 score > 0.65 (good) or > 0.75 (excellent)
+- [ ] Model selection justified with business context
+
+### Track B (Time Series) Checklist
+
+- [ ] Baseline model (seasonal naive or moving average)
+- [ ] Trained 3+ approaches (Linear/Ridge, ARIMA/Prophet, XGBoost)
+- [ ] Time-series aware splits (no data leakage!)
+- [ ] Multi-horizon evaluation (24h, 48h, 72h)
+- [ ] Hyperparameter tuning (ARIMA orders, Prophet parameters, etc.)
+- [ ] Documented metrics: RMSE, MAE, MAPE by horizon
+- [ ] Quantified prediction uncertainty (confidence intervals)
+- [ ] MAPE < 20% for 24h (good) or < 15% (excellent)
+- [ ] Checked for autocorrelation in residuals
+- [ ] Model selection justified with forecast accuracy
+
+### Self-Rating (1-5): _____
+
+### Quality Questions
+
+**Track A - Ask yourself:**
+- Did I properly handle class imbalance? (Critical for rare \"unavailable\" events)
+- Is my recall high enough? (False negatives = frustrated commuters)
+- Did I tune the classification threshold based on business needs?
+- Can my model predict in real-time (< 1 second inference)?
+
+**Track B - Ask yourself:**
+- Did I avoid data leakage? (No future information in training!)
+- How accurate are my 48h and 72h forecasts compared to 24h?
+- Did I quantify uncertainty? (Tourists need confidence intervals)
+- Are my residuals white noise? (No autocorrelation left?)
+
+### Checklist (Common - if you missed above)
 
 - [ ] Use proper temporal train/validation/test split
 - [ ] Create a simple baseline model
