@@ -153,8 +153,8 @@ Use the template sections:
 
 ### Step 4: Reference Resources
 As you work, use:
-- [Code Snippets](../docs/code_snippets.md) - Quick copy-paste solutions
-- [Coding Standards](../docs/coding_standards.md) - Best practices
+- [Code Snippets](../docs/references/code_snippets.md) - Quick copy-paste solutions
+- [Coding Standards](../docs/standards/coding_standards.md) - Best practices
 - [Example Notebook](example_data_exploration.ipynb) - Working example
 
 ### Step 5: Complete Checkpoint
@@ -169,18 +169,18 @@ Before moving to the next module, verify the checkpoint criteria in the module R
 - 🎓 [Example Notebook](example_data_exploration.ipynb) - Best practices demo
 
 ### Documentation
-- 📐 [Coding Standards](../docs/coding_standards.md) - Write clean code
-- 📚 [Code Snippets](../docs/code_snippets.md) - Common operations
-- 🔧 [Google Colab Setup](../docs/setup_google_colab.md) - Cloud setup
+- 📐 [Coding Standards](../docs/standards/coding_standards.md) - Write clean code
+- 📚 [Code Snippets](../docs/references/code_snippets.md) - Common operations
+- 🔧 [Google Colab Setup](../docs/setup/setup_google_colab.md) - Cloud setup
 
 ### Data & Sources
-- 🌐 [Open Data Sources](../docs/open_data_sources.md) - Where to get data
+- 🌐 [Open Data Sources](../docs/references/open_data_sources.md) - Where to get data
 - 📊 [Data README](../data/README.md) - Data organization
 
 ### Best Practices
-- 🧪 [Experiment Tracking](../docs/experiment_best_practices.md) - MLflow guide
-- 📋 [Model Documentation](../docs/model_documentation_guidelines.md) - Document models
-- 📈 [Reporting Template](../docs/reporting_template.md) - Present findings
+- 🧪 [Experiment Tracking](../docs/best_practices/experiment_best_practices.md) - MLflow guide
+- 📋 [Model Documentation](../docs/best_practices/model_documentation_guidelines.md) - Document models
+- 📈 [Reporting Template](../docs/best_practices/reporting_template.md) - Present findings
 
 ---
 

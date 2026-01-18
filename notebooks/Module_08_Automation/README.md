@@ -76,11 +76,11 @@ Follow this pattern: `M8_{number}_{description}.ipynb`
 ## 💡 Tips
 - Start with the [notebook template](../notebook_template.ipynb) for consistent structure
 - Use `pipelines/run_pipeline.py` for orchestration
-- Reference [code snippets](../../docs/code_snippets.md) for pipeline examples
+- Reference [code snippets](../../docs/references/code_snippets.md) for pipeline examples
 - Make pipelines modular and testable
 - Add logging for debugging
 - Handle errors gracefully
-- Follow [coding standards](../../docs/coding_standards.md) for clean code
+- Follow [coding standards](../../docs/standards/coding_standards.md) for clean code
 
 ## 📚 Key Libraries & Resources
 **Libraries**:
@@ -91,9 +91,9 @@ Follow this pattern: `M8_{number}_{description}.ipynb`
 
 **Documentation**:
 - 📓 [Notebook Template](../notebook_template.ipynb) - Start here
-- 📚 [Code Snippets](../../docs/code_snippets.md) - Pipeline examples
-- 📐 [Coding Standards](../../docs/coding_standards.md) - Best practices
-- 🔧 [Dependency Management](../../docs/dependency_management.md) - Setup guide
+- 📚 [Code Snippets](../../docs/references/code_snippets.md) - Pipeline examples
+- 📐 [Coding Standards](../../docs/standards/coding_standards.md) - Best practices
+- 🔧 [Dependency Management](../../docs/setup/dependency_management.md) - Setup guide
 
 ## 🔧 Pipeline Checklist
 - [ ] Data acquisition automated

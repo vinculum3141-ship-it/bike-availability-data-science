@@ -106,11 +106,11 @@ Follow this pattern: `M5_{number}_{description}.ipynb`
 ## 💡 Tips
 - Start with the [notebook template](../notebook_template.ipynb) for consistent structure
 - Use `src/modeling.py` for model training functions
-- Check [code snippets](../../docs/code_snippets.md) for model training examples
+- Check [code snippets](../../docs/references/code_snippets.md) for model training examples
 - Always evaluate on held-out test data
 - Use cross-validation for robust estimates
 - Track hyperparameters for reproducibility
-- Follow [coding standards](../../docs/coding_standards.md) for clean code
+- Follow [coding standards](../../docs/standards/coding_standards.md) for clean code
 
 ## 📚 Key Libraries & Resources
 **Libraries**:
@@ -120,10 +120,10 @@ Follow this pattern: `M5_{number}_{description}.ipynb`
 
 **Documentation**:
 - 📓 [Notebook Template](../notebook_template.ipynb) - Start here
-- 📚 [Code Snippets](../../docs/code_snippets.md) - Model training examples
-- 📐 [Coding Standards](../../docs/coding_standards.md) - Best practices
-- 🧪 [Experiment Best Practices](../../docs/experiment_best_practices.md) - MLflow tracking
-- 📋 [Model Documentation](../../docs/model_documentation_guidelines.md) - Document models
+- 📚 [Code Snippets](../../docs/references/code_snippets.md) - Model training examples
+- 📐 [Coding Standards](../../docs/standards/coding_standards.md) - Best practices
+- 🧪 [Experiment Best Practices](../../docs/best_practices/experiment_best_practices.md) - MLflow tracking
+- 📋 [Model Documentation](../../docs/best_practices/model_documentation_guidelines.md) - Document models
 
 ## ⚠️ Important
 - Respect temporal ordering in time series data

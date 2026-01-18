@@ -109,11 +109,11 @@ Follow this pattern: `M6_{number}_{description}.ipynb`
 ## 💡 Tips
 - Start with the [notebook template](../notebook_template.ipynb) for consistent structure
 - Use `src/evaluation.py` for evaluation functions
-- Check [model documentation guidelines](../../docs/model_documentation_guidelines.md) for templates
-- Reference [code snippets](../../docs/code_snippets.md) for evaluation examples
+- Check [model documentation guidelines](../../docs/best_practices/model_documentation_guidelines.md) for templates
+- Reference [code snippets](../../docs/references/code_snippets.md) for evaluation examples
 - Be honest about model limitations
 - Think about production monitoring
-- Follow [coding standards](../../docs/coding_standards.md) for clean code
+- Follow [coding standards](../../docs/standards/coding_standards.md) for clean code
 
 ## 📚 Key Libraries & Resources
 **Libraries**:
@@ -123,9 +123,9 @@ Follow this pattern: `M6_{number}_{description}.ipynb`
 
 **Documentation**:
 - 📓 [Notebook Template](../notebook_template.ipynb) - Start here
-- 📋 [Model Documentation Guidelines](../../docs/model_documentation_guidelines.md) - Document models
-- 📚 [Code Snippets](../../docs/code_snippets.md) - Evaluation examples
-- 📐 [Coding Standards](../../docs/coding_standards.md) - Best practices
+- 📋 [Model Documentation Guidelines](../../docs/best_practices/model_documentation_guidelines.md) - Document models
+- 📚 [Code Snippets](../../docs/references/code_snippets.md) - Evaluation examples
+- 📐 [Coding Standards](../../docs/standards/coding_standards.md) - Best practices
 
 ## 📋 Model Card Checklist
 - [ ] Model purpose and use case

@@ -94,10 +94,10 @@ Follow this pattern: `M3_{number}_{description}.ipynb`
 - Review the [example EDA notebook](../example_data_exploration.ipynb) for best practices
 - Use `ydata-profiling` (formerly pandas-profiling) for quick automated analysis
 - Look for patterns in time series data
-- Check [code snippets](../../docs/code_snippets.md) for visualization examples
+- Check [code snippets](../../docs/references/code_snippets.md) for visualization examples
 - Pay attention to data quality issues early
 - Document insights for later feature engineering
-- Follow [coding standards](../../docs/coding_standards.md) for clean code
+- Follow [coding standards](../../docs/standards/coding_standards.md) for clean code
 
 ## 📚 Key Libraries & Resources
 **Libraries**:
@@ -109,8 +109,8 @@ Follow this pattern: `M3_{number}_{description}.ipynb`
 **Documentation**:
 - 📓 [Notebook Template](../notebook_template.ipynb) - Start here
 - 🎓 [Example EDA Notebook](../example_data_exploration.ipynb) - Learn from this
-- 📚 [Code Snippets](../../docs/code_snippets.md) - Visualization examples
-- 📐 [Coding Standards](../../docs/coding_standards.md) - Best practices
+- 📚 [Code Snippets](../../docs/references/code_snippets.md) - Visualization examples
+- 📐 [Coding Standards](../../docs/standards/coding_standards.md) - Best practices
 - 📊 [Data Organization](../../data/README.md) - Data structure guide
 
 ## ✨ Checkpoint

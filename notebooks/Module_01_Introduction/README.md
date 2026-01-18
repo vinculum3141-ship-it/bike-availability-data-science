@@ -82,18 +82,18 @@ Examples:
 - Use markdown cells to explain your thinking process
 - Include code comments for clarity
 - Save your work frequently
-- Follow the [coding standards](../../docs/coding_standards.md)
+- Follow the [coding standards](../../docs/standards/coding_standards.md)
 - Don't worry about perfection - focus on learning!
 - Run each notebook cell-by-cell to understand the flow
 
 ## 📚 Resources
 - 📓 [Notebook Template](../notebook_template.ipynb) - Copy this to start
 - 🎓 [Example Notebook](../example_data_exploration.ipynb) - See best practices
-- 📐 [Coding Standards](../../docs/coding_standards.md) - Write clean code
-- 📚 [Code Snippets](../../docs/code_snippets.md) - Quick reference
-- 🔧 [Google Colab Setup](../../docs/setup_google_colab.md) - Cloud setup
-- 🌐 [Open Data Sources](../../docs/open_data_sources.md) - Full data catalog
-- 📦 [Dependency Management](../../docs/dependency_management.md) - Environment setup
+- 📐 [Coding Standards](../../docs/standards/coding_standards.md) - Write clean code
+- 📚 [Code Snippets](../../docs/references/code_snippets.md) - Quick reference
+- 🔧 [Google Colab Setup](../../docs/setup/setup_google_colab.md) - Cloud setup
+- 🌐 [Open Data Sources](../../docs/references/open_data_sources.md) - Full data catalog
+- 📦 [Dependency Management](../../docs/setup/dependency_management.md) - Environment setup
 
 ## ✨ Definition of Done (Checkpoint)
 Before moving to Module 02, ensure:

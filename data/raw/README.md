@@ -167,7 +167,7 @@ data/raw/
 ## 🔗 Related Resources
 
 - [Data Acquisition Module](../../notebooks/Module_02_Data_Acquisition/)
-- [Open Data Sources](../../docs/open_data_sources.md)
+- [Open Data Sources](../../docs/references/open_data_sources.md)
 - [Data Processing Guide](../processed/README.md)
 
 ---

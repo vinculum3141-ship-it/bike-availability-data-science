@@ -75,12 +75,12 @@ Follow this pattern: `M9_{number}_{description}.ipynb`
 
 ## 💡 Tips
 - Start with the [notebook template](../notebook_template.ipynb) for consistent structure
-- Check [experiment best practices](../../docs/experiment_best_practices.md) for MLflow guidelines
-- Reference [code snippets](../../docs/code_snippets.md) for MLflow examples
+- Check [experiment best practices](../../docs/best_practices/experiment_best_practices.md) for MLflow guidelines
+- Reference [code snippets](../../docs/references/code_snippets.md) for MLflow examples
 - Track everything: code, data, parameters, metrics
 - Use meaningful experiment names
 - Document experiment rationale
-- Follow [coding standards](../../docs/coding_standards.md) for clean code
+- Follow [coding standards](../../docs/standards/coding_standards.md) for clean code
 
 ## 📚 Key Libraries & Resources
 **Libraries**:
@@ -90,10 +90,10 @@ Follow this pattern: `M9_{number}_{description}.ipynb`
 
 **Documentation**:
 - 📓 [Notebook Template](../notebook_template.ipynb) - Start here
-- 🧪 [Experiment Best Practices](../../docs/experiment_best_practices.md) - MLflow guide
-- 📚 [Code Snippets](../../docs/code_snippets.md) - MLflow examples
-- 📐 [Coding Standards](../../docs/coding_standards.md) - Best practices
-- 📋 [Model Documentation](../../docs/model_documentation_guidelines.md) - Document experiments
+- 🧪 [Experiment Best Practices](../../docs/best_practices/experiment_best_practices.md) - MLflow guide
+- 📚 [Code Snippets](../../docs/references/code_snippets.md) - MLflow examples
+- 📐 [Coding Standards](../../docs/standards/coding_standards.md) - Best practices
+- 📋 [Model Documentation](../../docs/best_practices/model_documentation_guidelines.md) - Document experiments
 
 ## 🧪 Experiment Tracking Checklist
 - [ ] Parameters logged

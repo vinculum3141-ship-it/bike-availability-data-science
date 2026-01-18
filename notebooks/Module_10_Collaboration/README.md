@@ -80,11 +80,11 @@ Follow this pattern: `M10_{number}_{description}.ipynb`
 
 ## 💡 Tips
 - Start with the [notebook template](../notebook_template.ipynb) for consistent structure
-- Check [reporting template](../../docs/reporting_template.md) for documentation
-- Reference [code snippets](../../docs/code_snippets.md) for common tasks
+- Check [reporting template](../../docs/best_practices/reporting_template.md) for documentation
+- Reference [code snippets](../../docs/references/code_snippets.md) for common tasks
 - Practice explaining technical concepts simply
 - Think about production requirements early
-- Follow [coding standards](../../docs/coding_standards.md) religiously
+- Follow [coding standards](../../docs/standards/coding_standards.md) religiously
 
 ## 📚 Key Tools & Resources
 **Tools**:
@@ -95,10 +95,10 @@ Follow this pattern: `M10_{number}_{description}.ipynb`
 
 **Documentation**:
 - 📓 [Notebook Template](../notebook_template.ipynb) - Consistent structure
-- 📈 [Reporting Template](../../docs/reporting_template.md) - Present findings
-- 📐 [Coding Standards](../../docs/coding_standards.md) - Code quality
-- 📚 [Code Snippets](../../docs/code_snippets.md) - Quick reference
-- 🔧 [Dependency Management](../../docs/dependency_management.md) - Setup guide
+- 📈 [Reporting Template](../../docs/best_practices/reporting_template.md) - Present findings
+- 📐 [Coding Standards](../../docs/standards/coding_standards.md) - Code quality
+- 📚 [Code Snippets](../../docs/references/code_snippets.md) - Quick reference
+- 🔧 [Dependency Management](../../docs/setup/dependency_management.md) - Setup guide
 
 ## 🤝 Collaboration Best Practices
 - Write clear commit messages

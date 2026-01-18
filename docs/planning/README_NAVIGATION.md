@@ -6,7 +6,9 @@ This document provides a comprehensive map of all README files in the repository
 
 ## 📚 Entry Points Overview
 
-This repository contains **30 README files** organized hierarchically. Each serves as an entry point for different aspects of the project.
+This repository contains **30+ README files** organized hierarchically. Each serves as an entry point for different aspects of the project.
+
+**NEW:** This course now offers **dual-track learning** with flexible pathways. See [Learning Pathways Guide](learning_pathways.md) for details.
 
 ---
 
@@ -16,13 +18,17 @@ This repository contains **30 README files** organized hierarchically. Each serv
 **Purpose**: Main entry point for the entire repository  
 **Audience**: Everyone (students, instructors, contributors)  
 **Key Sections**:
-- Project overview and goals
-- Quick Start guide (6 steps)
+- **NEW:** Dual-track introduction (Track A: Classification, Track B: Regression + Time Series)
+- Project overview and Smart Cities framing
+- Prerequisites and time commitment
+- What You'll Learn (core + track-specific skills)
+- Quick Start guide
 - Setup instructions
-- Learning resources
+- Learning resources (including track selection guides)
 - Capstone project info
 
 **Links to**:
+- **NEW:** Learning Pathways Guide, Use Case Comparison, OV-fiets System Overview, Course Structure
 - All module READMEs
 - Documentation guides
 - Capstone guidelines
@@ -73,25 +79,31 @@ Each module README follows a consistent structure with learning objectives, task
 **[notebooks/Module_03_Exploration_Profiling/README.md](../notebooks/Module_03_Exploration_Profiling/README.md)**  
 **Focus**: EDA, profiling, patterns  
 **Key Tasks**: Data profiling, distribution analysis, quality checks  
-**Special Resources**: Example EDA notebook, visualization snippets
+**Special Resources**: Example EDA notebook, visualization snippets  
+**NEW:** Module 3 includes **track selection decision point** at the end
 
-### Module 04: Feature Engineering
+### Module 04: Feature Engineering 🔀 **TRACK DIVERGENCE**
 **[notebooks/Module_04_Feature_Engineering/README.md](../notebooks/Module_04_Feature_Engineering/README.md)**  
 **Focus**: Creating meaningful features  
-**Key Tasks**: Time features, weather features, lag/rolling features  
-**Special Resources**: Feature engineering snippets, data leakage warnings
+**Track A (Classification)**: Time features, weather features, train schedules (short-term prediction)  
+**Track B (Regression/TS)**: Extended temporal features, weather forecasts, event calendars, lag features (long-term prediction)  
+**Special Resources**: Feature engineering snippets, data leakage warnings  
+**NEW:** Contains sub-track folders: `track_a_commuter/` and `track_b_multiday/`
 
-### Module 05: Modeling
+### Module 05: Modeling 🔀 **TRACKS CONTINUE**
 **[notebooks/Module_05_Modeling/README.md](../notebooks/Module_05_Modeling/README.md)**  
 **Focus**: Training ML models  
-**Key Tasks**: Train/test splits, baseline models, tree models, comparison  
-**Special Resources**: Model training snippets, experiment tracking guide
+**Track A (Classification)**: Logistic Regression, Random Forest Classifier, XGBoost, classification metrics  
+**Track B (Regression/TS)**: Linear/Ridge Regression, Random Forest Regressor, ARIMA, Prophet, uncertainty quantification  
+**Special Resources**: Model training snippets, experiment tracking guide  
+**NEW:** Contains sub-track folders: `track_a_classification/` and `track_b_regression/`
 
-### Module 06: Validation & Governance
+### Module 06: Validation & Governance 🔗 **TRACKS CONVERGE**
 **[notebooks/Module_06_Validation_Governance/README.md](../notebooks/Module_06_Validation_Governance/README.md)**  
 **Focus**: Testing, documentation, governance  
-**Key Tasks**: Model validation, error analysis, interpretability, documentation  
-**Special Resources**: Model documentation guidelines, evaluation snippets
+**Key Tasks**: Model validation (classification or regression), error analysis, interpretability, documentation  
+**Special Resources**: Model documentation guidelines, evaluation snippets  
+**NEW:** Includes track-specific validation examples
 
 ### Module 07: Visualization
 **[notebooks/Module_07_Visualization/README.md](../notebooks/Module_07_Visualization/README.md)**  
@@ -153,9 +165,29 @@ Each module README follows a consistent structure with learning objectives, task
 
 ---
 
-## 📋 Documentation Guides (7 Files)
+## 📋 Documentation Guides (10+ Files)
 
-### [docs/coding_standards.md](../docs/coding_standards.md)
+### Track Selection & Learning Pathways 🎯 **NEW**
+
+#### [docs/guides/learning_pathways.md](../guides/learning_pathways.md)
+**Purpose**: Visualize complete learning journeys for both tracks  
+**Covers**: Track A vs Track B pathways, self-assessment, milestones, learning strategies
+
+#### [docs/guides/use_case_comparison.md](../guides/use_case_comparison.md)
+**Purpose**: Compare commuter vs tourist prediction problems  
+**Covers**: Decision tree, prerequisites checklist, feature comparison, capstone options
+
+#### [docs/guides/ov_fiets_system_overview.md](../guides/ov_fiets_system_overview.md)
+**Purpose**: Domain knowledge for OV-fiets bike-sharing system  
+**Covers**: No-dock system, operational constraints, user populations, data characteristics
+
+#### [docs/guides/course_structure_dual_track.md](../guides/course_structure_dual_track.md)
+**Purpose**: Full course structure with dual-track organization  
+**Covers**: Module-by-module breakdown, track divergence/convergence, learning pathways
+
+### Setup & Environment
+
+### [docs/standards/coding_standards.md](../standards/coding_standards.md)
 **Purpose**: Python and data science coding standards  
 **Covers**: PEP 8, naming, docstrings, DS-specific patterns, before/after examples
 

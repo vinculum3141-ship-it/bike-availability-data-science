@@ -6,29 +6,35 @@ This document lists free, open data sources for the bike availability prediction
 
 ## 🚴 Bike Sharing Data
 
-### Amsterdam Bike Data
-- **Source**: City of Amsterdam Open Data Portal
-- **URL**: https://data.amsterdam.nl/
+### Amsterdam OV-fiets Data (Primary Data Source)
+- **Source**: CityBikes API (Amsterdam OV-fiets endpoint)
+- **URL**: http://api.citybik.es/v2/networks/ov-fiets
 - **API**: Real-time bike availability API
-- **Description**: Real-time availability of bikes at bike-sharing stations
-- **Update Frequency**: Real-time (every few minutes)
+- **Description**: Real-time availability of OV-fiets bikes at train station facilities
+- **Update Frequency**: ~15 minutes
+- **Authentication**: None required (open data)
 - **Data Fields**:
   - Station ID, name, location (lat/lon)
-  - Number of available bikes
-  - Number of available docks
+  - Number of available bikes (in secure facility)
   - Timestamp
-  - Station status
+  - Station status (active/inactive)
 
-### Alternative Bike Sharing Systems
+**Important Notes:**
+- **No docking stations:** OV-fiets bikes are stored in secure indoor facilities, not outdoor docks
+- **Staff-managed:** Bikes are managed by NS staff, not automated docking systems
+- **Same-station returns:** Bikes must be returned to the same station (no rebalancing)
+- **Real operational data:** This is live production data from the Dutch national bike-sharing system
+
+### Alternative Bike Sharing Systems (For Comparison)
 - **CityBikes API**: http://api.citybik.es/v2/
   - Global bike-sharing data
-  - Multiple cities worldwide
+  - Multiple cities worldwide (including dock-based systems like Citi Bike, Santander Cycles)
   - Free, no authentication required
 
 - **Capital Bikeshare (Washington DC)**: 
   - https://www.capitalbikeshare.com/system-data
   - Historical trip data
-  - Station information
+  - Dock-based system (different from OV-fiets)
 
 ---
 

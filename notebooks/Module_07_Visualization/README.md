@@ -75,12 +75,12 @@ Follow this pattern: `M7_{number}_{description}.ipynb`
 ## 💡 Tips
 - Start with the [notebook template](../notebook_template.ipynb) for consistent structure
 - Use `src/visualization.py` for reusable plotting functions
-- Check [code snippets](../../docs/code_snippets.md) for visualization examples
-- Reference [reporting template](../../docs/reporting_template.md) for stakeholder communication
+- Check [code snippets](../../docs/references/code_snippets.md) for visualization examples
+- Reference [reporting template](../../docs/best_practices/reporting_template.md) for stakeholder communication
 - Keep dashboards simple and focused
 - Design for your audience (technical vs business)
 - Test with real users if possible
-- Follow [coding standards](../../docs/coding_standards.md) for clean code
+- Follow [coding standards](../../docs/standards/coding_standards.md) for clean code
 
 ## 📚 Key Libraries & Resources
 **Libraries**:
@@ -90,9 +90,9 @@ Follow this pattern: `M7_{number}_{description}.ipynb`
 
 **Documentation**:
 - 📓 [Notebook Template](../notebook_template.ipynb) - Start here
-- 📚 [Code Snippets](../../docs/code_snippets.md) - Visualization examples
-- 📈 [Reporting Template](../../docs/reporting_template.md) - Present findings
-- 📐 [Coding Standards](../../docs/coding_standards.md) - Best practices
+- 📚 [Code Snippets](../../docs/references/code_snippets.md) - Visualization examples
+- 📈 [Reporting Template](../../docs/best_practices/reporting_template.md) - Present findings
+- 📐 [Coding Standards](../../docs/standards/coding_standards.md) - Best practices
 
 ## 🎨 Visualization Best Practices
 - Choose appropriate chart types

@@ -76,7 +76,7 @@ For this project, you'll work with open data from:
 | OpenChargeMap | Charging stations | Module 02 |
 | Custom APIs | Time-series data | Module 02 |
 
-**Complete list**: See [docs/open_data_sources.md](../docs/open_data_sources.md)
+**Complete list**: See [docs/open_data_sources.md](../docs/references/open_data_sources.md)
 
 ---
 
@@ -191,7 +191,7 @@ df.to_parquet('data/processed/cleaned_bike_weather_v1.parquet', index=False)
 df.to_csv('data/raw/amsterdam_bike_api_2024-01-15.csv', index=False)
 ```
 
-**More examples**: [docs/code_snippets.md](../docs/code_snippets.md)
+**More examples**: [docs/code_snippets.md](../docs/references/code_snippets.md)
 
 ---
 
@@ -221,16 +221,16 @@ Make sure you have these installed:
 pip install pandas numpy scipy ydata-profiling
 ```
 
-**See**: [docs/dependency_management.md](../docs/dependency_management.md) for complete setup
+**See**: [docs/dependency_management.md](../docs/setup/dependency_management.md) for complete setup
 
 ---
 
 ## 📖 Additional Resources
 
 ### Documentation
-- 📐 [Coding Standards](../docs/coding_standards.md) - Data handling best practices
-- 📚 [Code Snippets](../docs/code_snippets.md) - Quick data operations
-- 🌐 [Open Data Sources](../docs/open_data_sources.md) - Where to get data
+- 📐 [Coding Standards](../docs/standards/coding_standards.md) - Data handling best practices
+- 📚 [Code Snippets](../docs/references/code_snippets.md) - Quick data operations
+- 🌐 [Open Data Sources](../docs/references/open_data_sources.md) - Where to get data
 
 ### Module Guides
 - 📓 [Module 02: Data Acquisition](../notebooks/Module_02_Data_Acquisition/) - API usage
@@ -263,7 +263,7 @@ Before moving data to processed/:
 **Solution**: Run data acquisition notebooks in Module 02
 
 ### Issue: Import errors
-**Solution**: Check [dependency_management.md](../docs/dependency_management.md)
+**Solution**: Check [dependency_management.md](../docs/setup/dependency_management.md)
 
 ### Issue: Can't find data files
 **Solution**: Use relative paths from project root:
